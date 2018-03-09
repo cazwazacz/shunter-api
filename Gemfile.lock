@@ -1,3 +1,13 @@
+PATH
+  remote: ../parliament-grom-decorators
+  specs:
+    parliament-grom-decorators (0.17.0)
+
+PATH
+  remote: ../parliament.uk-routes
+  specs:
+    parliament-routes (0.6.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,17 +48,76 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    airbrake (7.2.1)
+      airbrake-ruby (~> 2.5)
+    airbrake-ruby (2.8.2)
     arel (8.0.0)
+    ast (2.4.0)
+    bandiera-client (3.0.4)
+      macmillan-utils
+      rest-client
+    bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.0)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (>= 2.0, < 4.0)
+    codeclimate-test-reporter (1.0.7)
+      simplecov
+    colorize (0.8.1)
     concurrent-ruby (1.0.5)
+    coveralls (0.7.1)
+      multi_json (~> 1.3)
+      rest-client
+      simplecov (>= 0.7)
+      term-ansicolor
+      thor
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     crass (1.0.3)
-    erubi (1.7.0)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.2.1)
+    erubi (1.7.1)
+    factory_bot (4.8.2)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.8.2)
+      factory_bot (~> 4.8.2)
+      railties (>= 3.0.0)
     ffi (1.9.23)
+    geosparql_to_geojson (0.2.0)
+      json-schema (~> 2.8)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    grom (0.5.1)
+      activesupport (>= 5.0.0.1)
+      rdf (= 2.2.3)
+      rdf-vocab (~> 2.2)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
+    hashdiff (0.3.7)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.7.0)
+      activesupport (>= 4.2.0)
+      multi_json (>= 1.2)
+    json (2.1.0)
+    json-schema (2.8.0)
+      addressable (>= 2.4)
+    link_header (0.0.8)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -56,19 +125,60 @@ GEM
     loofah (2.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    macmillan-utils (1.0.44)
+      activesupport (>= 3.2.0)
+      codeclimate-test-reporter
+      colorize
+      multi_test
+      rspec
+      rubocop
+      simplecov
+      simplecov-rcov
+      syslog-logger
+      webmock
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    multi_json (1.13.1)
+    multi_test (0.1.2)
+    netrc (0.11.0)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    puma (3.11.2)
+    parallel (1.12.1)
+    parallel_tests (2.21.2)
+      parallel
+    parliament-ntriple (0.2.1)
+      grom (~> 0.5)
+    parliament-ruby (0.10.2)
+    parliament-utils (0.7.1)
+      bandiera-client
+      coveralls
+      haml
+      i18n
+      parliament-grom-decorators (~> 0.10)
+      parliament-ntriple
+      parliament-ruby (~> 0.10)
+      pugin
+      simplecov
+      vcard
+    parser (2.5.0.3)
+      ast (~> 2.4.0)
+    powerpack (0.1.1)
+    public_suffix (3.0.2)
+    pugin (1.6.18)
+    puma (3.10.0)
     rack (2.0.4)
-    rack-test (0.8.2)
+    rack-rewrite (1.5.1)
+    rack-test (0.7.0)
       rack (>= 1.0, < 3)
+    rack-timeout (0.4.2)
     rails (5.1.5)
       actioncable (= 5.1.5)
       actionmailer (= 5.1.5)
@@ -81,6 +191,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.1.5)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -92,11 +206,59 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    rainbow (3.0.0)
     rake (12.3.0)
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rdf (2.2.3)
+      hamster (~> 3.0)
+      link_header (~> 0.0, >= 0.0.8)
+    rdf-vocab (2.2.9)
+      rdf (>= 2.2, < 4.0)
+    redcarpet (3.4.0)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-rails (3.7.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    rubocop (0.53.0)
+      parallel (~> 1.10)
+      parser (>= 2.5)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
+    safe_yaml (1.0.4)
+    simplecov (0.15.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    simplecov-rcov (0.2.3)
+      simplecov (>= 0.4.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -109,27 +271,84 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.13)
+    syslog-logger (1.6.8)
+    temple (0.8.0)
+    term-ansicolor (1.6.0)
+      tins (~> 1.0)
     thor (0.20.0)
     thread_safe (0.3.6)
+    tilt (2.0.8)
+    timecop (0.9.1)
+    tins (1.16.3)
+    turbolinks (5.1.0)
+      turbolinks-source (~> 5.1)
+    turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2018.3)
+      tzinfo (>= 1.0.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+    unicode-display_width (1.3.0)
+    vcard (0.2.15)
+    vcr (4.0.0)
+    web-console (3.5.1)
+      actionview (>= 5.0)
+      activemodel (>= 5.0)
+      bindex (>= 0.4.0)
+      railties (>= 5.0)
+    webmock (3.3.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    xpath (3.0.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
+  bandiera-client
   byebug
+  capybara
+  dotenv
+  factory_bot_rails
+  geosparql_to_geojson (~> 0.2)
+  haml
+  jbuilder
   listen (>= 3.0.5, < 3.2)
-  puma (~> 3.7)
-  rails (~> 5.1.4)
+  parallel_tests
+  parliament-grom-decorators!
+  parliament-ntriple (~> 0.2)
+  parliament-routes!
+  parliament-ruby (~> 0.8)
+  parliament-utils (~> 0.6)
+  pugin (~> 1.6)
+  puma (~> 3.10.0)
+  rack-rewrite
+  rack-test (= 0.7.0)
+  rack-timeout
+  rails (~> 5.1.2)
+  rails-controller-testing
+  rake
+  redcarpet (~> 3.0)
+  rspec-rails
+  rubocop
+  simplecov (~> 0.14)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
+  timecop
+  turbolinks (~> 5)
   tzinfo-data
+  vcard (~> 0.2)
+  vcr
+  web-console (>= 3.3.0)
+  webmock
 
 BUNDLED WITH
    1.16.1

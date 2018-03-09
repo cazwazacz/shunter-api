@@ -1,59 +1,31 @@
 class PeopleController < ApplicationController
-  include ActiveModel::Serializers::JSON
-
-  before_action :set_header, :data_check, :build_request, except: :postcode_lookup
-
-  ROUTE_MAP = {
-    show:   proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_by_id.set_url_params({ person_id: params[:person_id] }) },
-    lookup: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_lookup.set_url_params({ property: params[:source], value: params[:id] }) }
-  }.freeze
-
+  before_action :set_header
 
   def show
-    @person, @seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'Person', 'SeatIncumbency', 'FormalBodyMembership', 'GovernmentIncumbency', 'OppositionIncumbency')
-    @person = @person.first
-
-    @subheading = "Former MP" if @person.former_mp?
-    @subheading = "Former Member of the House of Lords" if @person.former_lord?
-    @subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} MP for #{@person.current_seat_incumbency.constituency.name}" if @person.current_mp?
-    @subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} #{@person.statuses[:house_membership_status].join(' and ')}" if @person.current_lord?
-
-    @when_to_contact = { "template": "when-to-contact", "text": "You may be able to discuss issues with your MP in person or online. Contact them for details." } if @person.current_mp?
-
-    @contact_points = []
-    @person.current_seat_incumbency.contact_points.each do |contact_point|
-      @contact_points << {
-        "email": contact_point.email,
-        "phone": contact_point.phone_number,
-        "addresses": contact_point.postal_addresses.map(&:full_address)
-      }
-    end
-
     render json: {
       "layout": {
         "template": "layout",
         "page_template": "people__show"
       },
-      "title": "#{@person.display_name} - UK Parliament",
+      "title": "Ms Diane Abbott - UK Parliament",
       "components": {
         "cookie-banner": "cookie-banner",
         "banner": "banner",
         "header": "header",
         "top-navigation": "top-navigation",
-        "heading1": "#{@person.full_name}",
-        "subheading": @subheading,
+        "heading1": "Diane Abbott",
+        "subheading": "Labour MP for Hackney North and Stoke Newington",
         "image": {
           "template": "person-image",
-          "figure-url": "/media/#{@person.graph_id}",
-          "image-srcset1": "#{ENV['IMAGE_SERVICE_URL']}/#{@person.image_id}.jpeg?crop=CU_5:2&width=732&quality=80, #{ENV['IMAGE_SERVICE_URL']}/#{@person.image_id}.jpeg?crop=CU_5:2&width=1464&quality=80 2x",
-          "image-srcset2": "#{ENV['IMAGE_SERVICE_URL']}/#{@person.image_id}.jpeg?crop=MCU_3:2&width=444&quality=80, #{ENV['IMAGE_SERVICE_URL']}/#{@person.image_id}.jpeg?crop=MCU_3:2&width=888&quality=80 2x",
-          "image-src": "#{ENV['IMAGE_SERVICE_URL']}/#{@person.image_id}.jpeg?crop=CU_1:1&width=186&quality=80",
-          "image-alt": "#{@person.display_name}"
+          "media-uri": "/media/S3bGSTqn",
+          "image-src": "https://api.parliament.uk/Live/photo/S3bGSTqn.jpeg?crop=CU_5:2&width=1464&quality=80",
+          "image-alt": "Ms Diane Abbott"
         },
-        "when-to-contact": @when_to_contact,
         "contact": {
           "template": "contact",
-          "contact-points": @contact_points
+          "email": "diane.abbott.office@parliament.uk",
+          "phone": "020 7219 4426",
+          "address": "House of Commons, London, SW1A 0AA"
         },
         "roles": {
           "template": "roles",
@@ -138,11 +110,9 @@ class PeopleController < ApplicationController
           ]
         },
         "related-links": {
-          "template": "related-links",
-          "name": @person.full_name,
-          "website": @person.personal_weblinks,
-          "twitter": @person.twitter_weblinks,
-          "media-url": "/media/#{@person.image_id}"
+          "website": "http://www.dianeabbott.org.uk/",
+          "twitter": "https://twitter.com/HackneyAbbott",
+          "media-url": "/media/S3bGSTqn",
         },
         "footer": "footer"
       }
