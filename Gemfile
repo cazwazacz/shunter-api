@@ -1,13 +1,5 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
-
-source 'https://rubygems.org'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 
@@ -32,8 +24,7 @@ gem 'parliament-grom-decorators', path: '../parliament-grom-decorators'
 gem 'geosparql_to_geojson', '~> 0.2'
 
 # Parliament routing
-# gem 'parliament-routes', '~> 0.6'
-gem 'parliament-routes', path: '../parliament.uk-routes'
+gem 'parliament-routes', '~> 0.6'
 
 # Parliament-Utils gem for generic set up and configuration
 gem 'parliament-utils', '~> 0.6', require: false
@@ -63,9 +54,6 @@ gem 'tzinfo-data'
 gem 'redcarpet', '~> 3.0'
 
 gem 'vcard', '~> 0.2'
-
-# JSON API serialization
-gem 'jbuilder'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
