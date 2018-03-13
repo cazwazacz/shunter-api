@@ -1,5 +1,4 @@
 class PeopleController < ApplicationController
-  # include ActiveModel::Serializers::JSON
 
   before_action :set_header, :data_check, :build_request, except: :postcode_lookup
 
@@ -7,7 +6,6 @@ class PeopleController < ApplicationController
     show:   proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_by_id.set_url_params({ person_id: params[:person_id] }) },
     lookup: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_lookup.set_url_params({ property: params[:source], value: params[:id] }) }
   }.freeze
-
 
   def show
     @person, @seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'Person', 'SeatIncumbency', 'FormalBodyMembership', 'GovernmentIncumbency', 'OppositionIncumbency')
@@ -29,7 +27,6 @@ class PeopleController < ApplicationController
       }
     end
 
-    ########### LOTS OF ROLE STUFF
     # Only seat incumbencies, not committee roles are being grouped
     incumbencies = GroupingHelper.group(@seat_incumbencies, :constituency, :graph_id)
 
@@ -39,27 +36,14 @@ class PeopleController < ApplicationController
     roles += @government_incumbencies.to_a if Pugin::Feature::Bandiera.show_government_roles?
     roles += @opposition_incumbencies.to_a if Pugin::Feature::Bandiera.show_opposition_roles?
 
-    # @sorted_incumbencies = Parliament::NTriple::Utils.sort_by({
-    #   list:             @person.incumbencies,
-    #   parameters:       [:end_date],
-    #   prepend_rejected: false
-    # })
-    #
-    # @most_recent_incumbency = @sorted_incumbencies.last
-    #
-    # @current_incumbency = @most_recent_incumbency&.current? ? @most_recent_incumbency : nil
-
     HistoryHelper.reset
     HistoryHelper.add(roles)
     @history = HistoryHelper.history
-    ########### LOTS OF ROLE STUFF
 
-    # ROLES
     @current_roles = RoleHelper.organise_roles(@history[:current]) if @history[:current]
     @timeline_roles = RoleHelper.build_timeline(@history, @current_roles)
 
-
-    render json: {
+    person_hash = {
       "layout": {
         "template": "layout",
         "page_template": "people__show"
@@ -67,9 +51,8 @@ class PeopleController < ApplicationController
       "title": "#{@person.display_name} UK Parliament",
       "components": {
         "cookie-banner": "cookie-banner",
-        "banner": "banner",
-        "header": "header",
         "top-navigation": "top-navigation",
+        "header": "header",
         "heading1": "#{@person.full_name}",
         "subheading": @subheading,
         "image": {
@@ -103,6 +86,8 @@ class PeopleController < ApplicationController
         "footer": "footer"
       }
     }
+
+    render json: SerializerHelper.add_components(person_hash, options = { header: false, footer: false })
   end
 
   def index
@@ -132,4 +117,5 @@ class PeopleController < ApplicationController
   def set_header
     response.set_header("Content-Type", "application/x-shunter+json")
   end
+
 end

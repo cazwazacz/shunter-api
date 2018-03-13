@@ -25,12 +25,12 @@ module RoleHelper
         if role.class == GroupingHelper::GroupedObject
           first_line_start = 'MP for'
           first_line_end = "#{role.nodes[0].constituency.name}"
-          first_line = "#{first_line_start} #{first_line_end}".html_safe
+          first_line = "#{first_line_start} #{first_line_end}"
           roles << { "role-type": "Parliamentary role", "role-title": first_line, "role-count": "Elected #{role.nodes.count} times", "role-dates": role.nodes.map(&:date_range) }
         else
           first_line_start = 'MP for'
           first_line_end = "#{role.constituency.name}"
-          first_line = "#{first_line_start} #{first_line_end}".html_safe
+          first_line = "#{first_line_start} #{first_line_end}"
           roles << { "role-type": "Parliamentary role", "role-title": first_line, "role-dates": [role.date_range] }
         end
       else

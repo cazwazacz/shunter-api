@@ -1,4 +1,4 @@
-class PeopleController < ApplicationController
+class PeopleController3 < ApplicationController
   include ActiveModel::Serializers::JSON
 
   before_action :set_header, :data_check, :build_request, except: :postcode_lookup

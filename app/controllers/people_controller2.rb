@@ -1,4 +1,4 @@
-class PeopleController < ApplicationController
+class PeopleController2 < ApplicationController
   before_action :set_header
 
   def show
