@@ -52,8 +52,22 @@ module RoleHelper
       timeline_roles << { "time-period": "Held in the last #{year} years", "roles": RoleHelper.organise_roles(history_hash[:years][year]) }
     end
 
-    timeline_roles << { "time-period": history_hash[:start].year }
-
+    timeline_roles << { "time-period": history_hash[:start].year } if history_hash[:start]
+    timeline_roles
   end
 
+  def self.create_role_history(seat_incumbencies, committee_memberships, government_incumbencies, opposition_incumbencies)
+    # Only seat incumbencies, not committee roles are being grouped
+    incumbencies = GroupingHelper.group(seat_incumbencies, :constituency, :graph_id)
+
+    roles = []
+    roles += incumbencies
+    roles += committee_memberships.to_a if Pugin::Feature::Bandiera.show_committees?
+    roles += government_incumbencies.to_a if Pugin::Feature::Bandiera.show_government_roles?
+    roles += opposition_incumbencies.to_a if Pugin::Feature::Bandiera.show_opposition_roles?
+
+    HistoryHelper.reset
+    HistoryHelper.add(roles)
+    HistoryHelper.history
+  end
 end
