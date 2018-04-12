@@ -14,6 +14,7 @@ module Serializers
         hash["components"] = {}
         hash["components"]["cookie-banner"] = "cookie-banner"
         hash["components"]["top-navigation"] = "top-navigation"
+        hash["components"]["banner"] = "banner"
         hash["components"]["header"] = "header"
         hash["components"]["footer"] = "footer"
       end

@@ -6,6 +6,7 @@ require_relative './components/related_links'
 require_relative './components/roles'
 require_relative './components/timeline'
 require_relative './components/when_to_contact'
+require_relative './pages/list'
 
 module Serializers
 end

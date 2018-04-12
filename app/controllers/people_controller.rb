@@ -3,8 +3,9 @@ class PeopleController < ApplicationController
   before_action :set_header, :data_check, :build_request, except: :postcode_lookup
 
   ROUTE_MAP = {
-    show:   proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_by_id.set_url_params({ person_id: params[:person_id] }) },
-    lookup: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_lookup.set_url_params({ property: params[:source], value: params[:id] }) }
+    index:   proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_index },
+    show:    proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_by_id.set_url_params({ person_id: params[:person_id] }) },
+    letters: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_by_initial.set_url_params({ initial: params[:letter] }) }
   }.freeze
 
   def show
@@ -18,29 +19,17 @@ class PeopleController < ApplicationController
       @government_incumbencies,
       @opposition_incumbencies,
       options = { "top-navigation": false }
-    ).produce_json
+    ).produce_show_json
   end
 
   def index
-    render :json => {
-      "layout": {
-        "template": "people__index"
-      },
-      "people": [
-        {
-          "display_name": "Diane Abbott",
-          "graph_id": "43RHonMf",
-          "role": "MP for Hackney North and Stoke Newington",
-          "current_party": "Labour",
-        },
-        {
-          "display_name": "Lord Aberconway",
-          "graph_id": "O0giLg8A",
-          "role": "MP for Hackney North and Stoke Newington",
-          "current_party": "Labour",
-        }
-      ]
-    }
+    @people, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'Person', ::Grom::Node::BLANK)
+    render json: Serializers::List.new(@people, Person, 'people').produce_json
+  end
+
+  def letters
+    @people, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'Person', ::Grom::Node::BLANK)
+    render json: Serializers::List.new(@people, Person, 'people').produce_json
   end
 
   private

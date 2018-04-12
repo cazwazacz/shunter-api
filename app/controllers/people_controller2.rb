@@ -17,7 +17,7 @@ class PeopleController2 < ApplicationController
         "subheading": "Labour MP for Hackney North and Stoke Newington",
         "image": {
           "template": "person-image",
-          "media-uri": "/media/S3bGSTqn",
+          "figure-url": "/media/S3bGSTqn",
           "image-src": "https://api.parliament.uk/Live/photo/S3bGSTqn.jpeg?crop=CU_5:2&width=1464&quality=80",
           "image-alt": "Ms Diane Abbott"
         },
