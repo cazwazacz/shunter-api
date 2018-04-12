@@ -1,5 +1,4 @@
-class PeopleController3 < ApplicationController
-  include ActiveModel::Serializers::JSON
+class PeopleController < ApplicationController
 
   before_action :set_header, :data_check, :build_request, except: :postcode_lookup
 
@@ -8,7 +7,6 @@ class PeopleController3 < ApplicationController
     lookup: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_lookup.set_url_params({ property: params[:source], value: params[:id] }) }
   }.freeze
 
-
   def show
     @person, @seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'Person', 'SeatIncumbency', 'FormalBodyMembership', 'GovernmentIncumbency', 'OppositionIncumbency')
     @person = @person.first
@@ -16,12 +14,12 @@ class PeopleController3 < ApplicationController
     @subheading = "Former MP" if @person.former_mp?
     @subheading = "Former Member of the House of Lords" if @person.former_lord?
     @subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} MP for #{@person.current_seat_incumbency.constituency.name}" if @person.current_mp?
-    @subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} #{@person.statuses[:house_membership_status].join(' and ')}" if @person.current_lord?
+    @subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} - #{@person.statuses[:house_membership_status].join(' and ')}" if @person.current_lord?
 
     @when_to_contact = { "template": "when-to-contact", "text": "You may be able to discuss issues with your MP in person or online. Contact them for details." } if @person.current_mp?
 
     @contact_points = []
-    @person.current_seat_incumbency.contact_points.each do |contact_point|
+    @person.try(&:current_seat_incumbency).try(&:contact_points).each do |contact_point|
       @contact_points << {
         "email": contact_point.email,
         "phone": contact_point.phone_number,
@@ -29,17 +27,32 @@ class PeopleController3 < ApplicationController
       }
     end
 
-    render json: {
+    # Only seat incumbencies, not committee roles are being grouped
+    incumbencies = GroupingHelper.group(@seat_incumbencies, :constituency, :graph_id)
+
+    roles = []
+    roles += incumbencies
+    roles += @committee_memberships.to_a if Pugin::Feature::Bandiera.show_committees?
+    roles += @government_incumbencies.to_a if Pugin::Feature::Bandiera.show_government_roles?
+    roles += @opposition_incumbencies.to_a if Pugin::Feature::Bandiera.show_opposition_roles?
+
+    HistoryHelper.reset
+    HistoryHelper.add(roles)
+    @history = HistoryHelper.history
+
+    @current_roles = RoleHelper.organise_roles(@history[:current]) if @history[:current]
+    @timeline_roles = RoleHelper.build_timeline(@history, @current_roles)
+
+    person_hash = {
       "layout": {
         "template": "layout",
         "page_template": "people__show"
       },
-      "title": "#{@person.display_name} - UK Parliament",
+      "title": "#{@person.display_name} UK Parliament",
       "components": {
         "cookie-banner": "cookie-banner",
-        "banner": "banner",
-        "header": "header",
         "top-navigation": "top-navigation",
+        "header": "header",
         "heading1": "#{@person.full_name}",
         "subheading": @subheading,
         "image": {
@@ -57,85 +70,11 @@ class PeopleController3 < ApplicationController
         },
         "roles": {
           "template": "roles",
-          "role-list": [
-            {
-              "role-type": "Opposition role",
-              "role-title": "Shadow Home Secretary",
-              "role-dates": [
-                "6 Oct 2016 to present"
-              ]
-            },
-            {
-              "role-type": "Parliamentary role",
-              "role-title": "MP for Hackney North and Stoke Newington",
-              "role-count": "Elected 3 times",
-              "role-dates": [
-                "8 Jun 2017 to present",
-                "7 May 2015 to 3 May 2017",
-                "6 May 2010 to 30 Mar 2015"
-              ]
-            }
-          ]
+          "role-list": @current_roles
         },
         "timeline": {
           "template": "timeline",
-          "timeline-roles": [
-            {
-              "time-period": "Held currently",
-              "roles": [
-                {
-                  "role-title": "MP for Hackney North and Stoke Newington",
-                  "role-count": "Elected 3 times",
-                  "role-dates": [
-                    "8 Jun 2017 to present",
-                    "7 May 2015 to 3 May 2017",
-                    "6 May 2010 to 30 Mar 2015"
-                  ]
-                },
-                {
-                  "role-type": "Opposition role",
-                  "role-title": "Shadow Home Secretary",
-                  "role-dates": [
-                    "6 Oct 2016 to present"
-                  ]
-                }
-              ],
-            },
-            {
-              "time-period": "Held in the last 10 years",
-              "roles": [
-                {
-                  "role-title": "Shadow Secretary of State for Health",
-                  "role-type": "Opposition role",
-                  "role-dates": [
-                    "27 Jun 2016 to 6 Oct 2016"
-                  ]
-                },
-                {
-                  "role-title": "Shadow Secretary of State for International Development",
-                  "role-type": "Opposition role",
-                  "role-dates": [
-                    "14 Sep 2015 to 27 Jun 2016"
-                  ]
-                }
-              ]
-            },
-            {
-              "time-period": "Held in the last 20 years",
-              "roles": [
-                {
-                  "role-title": "Member of the Foreign Affairs Committee",
-                  "role-type": "Committee role",
-                  "role-dates": [
-                    "16 Jul 1997 to 11 May 2001"
-                  ]
-                },
-              ]
-            },
-            {
-              "time-period": "1987"
-            }
-          ]
+          "timeline-roles": @timeline_roles
         },
         "related-links": {
           "template": "related-links",
@@ -147,6 +86,8 @@ class PeopleController3 < ApplicationController
         "footer": "footer"
       }
     }
+
+    render json: SerializerHelper.add_components(person_hash, options = { "cookie-banner": false })
   end
 
   def index
@@ -176,4 +117,5 @@ class PeopleController3 < ApplicationController
   def set_header
     response.set_header("Content-Type", "application/x-shunter+json")
   end
+
 end
