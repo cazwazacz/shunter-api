@@ -1,7 +1,7 @@
 PATH
   remote: ../parliament-grom-decorators
   specs:
-    parliament-grom-decorators (0.17.0)
+    parliament-grom-decorators (0.23.0)
 
 GEM
   remote: https://rubygems.org/
