@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 PATH
   remote: ../parliament-grom-decorators
   specs:
     parliament-grom-decorators (0.23.0)
-
-=======
->>>>>>> upstream/master
 GEM
   remote: https://rubygems.org/
   specs:
