@@ -36,19 +36,19 @@ module Serializers
         hash["layout"]["template"] = "layout"
         hash["layout"]["page_template"] = "people__show"
         hash["title"] = "#{@person.display_name} UK Parliament"
-        hash["components"]["heading1"] = "#{@person.full_name}"
-        hash["components"]["subheading"] = subheading
+        hash["components"] << { "heading1": "#{@person.full_name}" }
+        hash["components"] << { "subheading": subheading }
       end
     end
 
     def produce_additional_show_json(json_hash)
       json_hash.tap do |hash|
-        hash["components"]["image"] = Serializers::Image.new(@person).produce_json if @person.image_id && @person.image_id != 'placeholder'
-        hash["components"]["when-to-contact"] = Serializers::WhenToContact.new.produce_json
-        hash["components"]["contact"] = Serializers::Contact.new(@person).produce_json if @person.contact_points.any?
-        hash["components"]["roles"] = Serializers::Roles.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).produce_json if @person.incumbencies.any? || @committee_memberships.any?
-        hash["components"]["timeline"] = Serializers::Timeline.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).produce_json if @person.incumbencies.any? || @committee_memberships.any?
-        hash["components"]["related-links"] = Serializers::RelatedLinks.new(@person).produce_json if @person.weblinks? || (@person.image_id && @person.image_id != 'placeholder')
+        hash["components"] << { "image": (Serializers::Image.new(@person).produce_json if @person.image_id && @person.image_id != 'placeholder') }
+        hash["components"] << { "when-to-contact": (Serializers::WhenToContact.new.produce_json) }
+        hash["components"] << { "contact": (Serializers::Contact.new(@person).produce_json if @person.contact_points.any?) }
+        hash["components"] << { "roles": (Serializers::Roles.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).produce_json if @person.incumbencies.any? || @committee_memberships.any?) }
+        hash["components"] << { "timeline": (Serializers::Timeline.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).produce_json if @person.incumbencies.any? || @committee_memberships.any?) }
+        hash["components"] << { "related-links": (Serializers::RelatedLinks.new(@person).produce_json if @person.weblinks? || (@person.image_id && @person.image_id != 'placeholder')) }
       end
     end
 
