@@ -29,7 +29,8 @@ class PeopleController < ApplicationController
 
   def letters
     @people, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'Person', ::Grom::Node::BLANK)
-    render json: Serializers::List.new(@people, Person, 'people').produce_json
+    p params[:letter]
+    render json: Serializers::List.new(@people, Person, 'people', @letters, params[:letter]).produce_json
   end
 
   private
