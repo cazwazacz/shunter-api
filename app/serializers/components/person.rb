@@ -12,7 +12,8 @@ module Serializers
     def produce_show_json
       base_json_hash = Serializers::Base.new(@options).produce_json
       base_and_core_json_hash = produce_core_show_json(base_json_hash)
-      full_json_hash = produce_additional_show_json(base_and_core_json_hash)
+      base_and_core_and_additional_json_hash = produce_additional_show_json(base_and_core_json_hash)
+      full_json_hash = Serializers::Base.new(@options).add_footer_to_json(base_and_core_and_additional_json_hash)
       full_json_hash.to_json
     end
 
@@ -20,6 +21,7 @@ module Serializers
       json_hash = {
         "display_name": "#{@person.display_name}",
         "graph_id": "#{@person.graph_id}",
+        "image_url": get_image_url,
         "role": role
       }
       json_hash.tap do |hash|
@@ -29,6 +31,14 @@ module Serializers
     end
 
     private
+
+    def get_image_url
+      image_url = "https://s3-eu-west-1.amazonaws.com/web1live.pugin-website/1.7.6/images/placeholder_members_image.png"
+      if @person.image_id != "placeholder"
+        image_url = "https://api.parliament.uk/Live/photo/#{@person.image_id}.jpeg?crop=CU_1:1&amp;width=186&amp;quality=80"
+      end
+      image_url
+    end
 
     def produce_core_show_json(json_hash)
       json_hash.tap do |hash|

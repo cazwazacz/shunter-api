@@ -14,8 +14,15 @@ module Serializers
         hash["components"] = []
         push_to_components(hash["components"], "cookie-banner", "cookie-banner")
         push_to_components(hash["components"], "top-navigation", "top-navigation")
+        # push_to_components(hash["components"], "banner", "banner")
         push_to_components(hash["components"], "banner", "banner")
         push_to_components(hash["components"], "header", "header")
+          # push_to_components(hash["components"], "footer", "footer")
+      end
+    end
+
+    def add_footer_to_json(json_hash)
+      json_hash.tap do |hash|
         push_to_components(hash["components"], "footer", "footer")
       end
     end

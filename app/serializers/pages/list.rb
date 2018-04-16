@@ -28,7 +28,8 @@ module Serializers
         hash["layout"] = {}
         hash["layout"]["template"] = "layout"
         hash["layout"]["page_template"] = "#{@objects_name}__index"
-        hash["#{@objects_name}"] = organise_objects
+        # hash["#{@objects_name}"] = organise_objects
+        hash["components"] << { name: "people",  data: organise_objects }
       end
     end
 
