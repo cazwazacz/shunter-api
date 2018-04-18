@@ -2,10 +2,14 @@ module Serializers
   class PersonShowPage < Page
     def initialize(person, seat_incumbencies=[], committee_memberships=[], government_incumbencies=[], opposition_incumbencies=[])
       @person = person
-      @seat_incumbencies = seat_incumbencies
+      @seat_incumbencies = seat_inpcumbencies
       @committee_memberships = committee_memberships
       @government_incumbencies = government_incumbencies
       @opposition_incumbencies = opposition_incumbencies
+    end
+
+    def title
+      "#{@person.display_name} - UK Parliament"
     end
 
     def content
@@ -28,7 +32,7 @@ module Serializers
           },
           {
               name: "contact",
-              data: (Serializers::Contact.new(@person).to_h if @person.contact_points.any?)
+              data: (Serializers::Contact.new(@person).to_p if @person.contact_points.any?)
           },
           {
               name: "roles",

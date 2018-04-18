@@ -8,7 +8,7 @@ module Serializers
       {
           layout: { template: 'layout' },
           components: components,
-          title: "#{@person.display_name}"
+          title: title
       }
     end
 
@@ -33,6 +33,10 @@ module Serializers
 
     def footer
       { "name": "footer", data: "footer" }
+    end
+
+    def title
+      ""
     end
   end
 end

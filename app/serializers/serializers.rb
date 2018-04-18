@@ -7,8 +7,10 @@ require_relative './components/related_links'
 require_relative './components/roles'
 require_relative './components/timeline'
 require_relative './components/when_to_contact'
+require_relative './components/letter_navigation'
 require_relative './pages/list'
 require_relative './pages/person_show_page'
+require_relative './pages/list_page'
 
 module Serializers
 end
