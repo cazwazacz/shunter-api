@@ -11,6 +11,14 @@ module Serializers
     def content
       [
           {
+              name: "heading1",
+              data: "#{@person.full_name}"
+          },
+          {
+              name: "subheading",
+              data: subheading
+          },
+          {
               name: "image",
               data: (Serializers::Image.new(@person).to_h if @person.image_id && @person.image_id != 'placeholder')
           },
@@ -35,6 +43,15 @@ module Serializers
               data: (Serializers::RelatedLinks.new(@person).to_h if @person.weblinks? || (@person.image_id && @person.image_id != 'placeholder'))
           }
       ]
+    end
+
+    ## Person Helper methods
+    def subheading
+      subheading = "Former MP" if @person.former_mp?
+      subheading = "Former Member of the House of Lords" if @person.former_lord?
+      subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} MP for #{@person.current_seat_incumbency.constituency.name}" if @person.current_mp?
+      subheading = "#{@person.current_party_membership.try(&:party).try(&:name)} - #{@person.statuses[:house_membership_status].join(' and ')}" if @person.current_lord?
+      subheading
     end
   end
 end

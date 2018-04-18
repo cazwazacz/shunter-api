@@ -1,13 +1,14 @@
 module Serializers
   class Page < Base
-    def initialize
-
+    def initialize(person)
+      @person = person
     end
 
     def to_h
       {
           layout: { template: 'layout' },
-          components: components
+          components: components,
+          title: "#{@person.display_name}"
       }
     end
 
