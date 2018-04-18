@@ -37,16 +37,10 @@ module Serializers
     end
 
     def produce_letters_array
-      letters_array = []
-      all_letters_array = ("A".."Z").to_a
-      all_letters_array.each do |letter|
-        if @letters.include?(letter)
-          letters_array << { letter: letter, presence: true, active: indicate_active_letter(letter)}
-        else
-          letters_array << { letter: letter, presence: nil, active: indicate_active_letter(letter)}
-        end
+      ("A".."Z").map do |letter|
+        presence = @letters.include?(letter) ? true : nil
+        { letter: letter, presence: presence, active: indicate_active_letter(letter) }
       end
-      letters_array
     end
 
     def indicate_active_letter(letter)

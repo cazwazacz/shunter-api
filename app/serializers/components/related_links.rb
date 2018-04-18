@@ -1,10 +1,10 @@
 module Serializers
-  class RelatedLinks
+  class RelatedLinks < Base
     def initialize(person)
       @person = person
     end
 
-    def produce_json
+    def content
       {}.tap do |hash|
         hash["template"] = "related-links"
         hash["name"] = @person.full_name if @person.image_id

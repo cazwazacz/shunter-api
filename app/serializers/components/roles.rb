@@ -7,7 +7,7 @@ module Serializers
       @opposition_incumbencies = opposition_incumbencies
     end
 
-    def produce_json
+    def content
       {
         "template": "roles",
         "role-list": current_roles

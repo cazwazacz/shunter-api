@@ -1,10 +1,10 @@
 module Serializers
-  class Image
+  class Image < Base
     def initialize(object)
       @object = object
     end
 
-    def produce_json
+    def content
       {
         "template": "person-image",
         "figure-url": "/media/#{@object.graph_id}",

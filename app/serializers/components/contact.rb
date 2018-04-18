@@ -1,10 +1,10 @@
 module Serializers
-  class Contact
+  class Contact < Base
     def initialize(object)
       @object = object
     end
 
-    def produce_json
+    def content
       {
         "template": "contact",
         "contact-points": find_contact_points
