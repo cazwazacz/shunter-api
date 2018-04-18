@@ -12,14 +12,13 @@ class PeopleController < ApplicationController
     @person, @seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'Person', 'SeatIncumbency', 'FormalBodyMembership', 'GovernmentIncumbency', 'OppositionIncumbency')
     @person = @person.first
 
-    render json: Serializers::Person.new(
-      @person,
-      @seat_incumbencies,
-      @committee_memberships,
-      @government_incumbencies,
-      @opposition_incumbencies,
-      options = { "top-navigation": false }
-    ).produce_show_json
+    render json: Serializers::PersonShowPage.new(
+        @person,
+        @seat_incumbencies,
+        @committee_memberships,
+        @government_incumbencies,
+        @opposition_incumbencies
+    ).to_h
   end
 
   def index

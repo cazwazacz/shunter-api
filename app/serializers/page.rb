@@ -22,16 +22,16 @@ module Serializers
     end
 
     def header
-      {
-          "cookie-banner": "cookie-banner",
-          "top-navigation": "top-navigation",
-          "banner": "banner",
-          "header": "header"
-      }
+      [
+         { "name": "cookie-banner", data: "cookie-banner" },
+         { "name": "top-navigation", data: "top-navigation" },
+         { "name": "banner", data: "banner" },
+         { "name": "header", data: "header" }
+      ]
     end
 
     def footer
-      { "footer": "footer" }
+      { "name": "footer", data: "footer" }
     end
   end
 end

@@ -1,5 +1,5 @@
 module Serializers
-  class Roles
+  class Roles < Base
     def initialize(seat_incumbencies, committee_memberships, government_incumbencies, opposition_incumbencies)
       @seat_incumbencies = seat_incumbencies
       @committee_memberships = committee_memberships
