@@ -5,6 +5,13 @@ module Serializers
     end
 
     def content
+      {
+          name: "related-links",
+          data: data
+      }
+    end
+
+    def data
       {}.tap do |hash|
         hash["template"] = "related-links"
         hash["name"] = @person.full_name if @person.image_id

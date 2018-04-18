@@ -6,6 +6,13 @@ module Serializers
 
     def content
       {
+          name: "contact",
+          data: data
+      }
+    end
+
+    def data
+      {
         "template": "contact",
         "contact-points": find_contact_points
       }

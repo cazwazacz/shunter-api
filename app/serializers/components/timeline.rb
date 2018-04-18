@@ -9,6 +9,13 @@ module Serializers
 
     def content
       {
+          name: "timeline",
+          data: data
+      }
+    end
+
+    def data
+      {
         "template": "timeline",
         "timeline-roles": timeline_roles
       }

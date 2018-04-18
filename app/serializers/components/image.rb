@@ -6,6 +6,14 @@ module Serializers
 
     def content
       {
+          name: "image",
+          data: data
+      }
+
+    end
+
+    def data
+      {
         "template": "person-image",
         "figure-url": "/media/#{@object.graph_id}",
         "image-srcset1": "#{ENV['IMAGE_SERVICE_URL']}/#{@object.image_id}.jpeg?crop=CU_5:2&width=732&quality=80, #{ENV['IMAGE_SERVICE_URL']}/#{@object.image_id}.jpeg?crop=CU_5:2&width=1464&quality=80 2x",

@@ -14,8 +14,8 @@ module Serializers
 
     def content
       [
-          { name: @object_name, data: list },
-          { name: "letter-navigation", data: Serializers::LetterNavigation.new(@letters, @active_letter).to_h }
+          { name: "letter-navigation", data: Serializers::LetterNavigation.new(@letters, @active_letter).to_h },
+          { name: @object_name, data: list }
       ]
     end
 
