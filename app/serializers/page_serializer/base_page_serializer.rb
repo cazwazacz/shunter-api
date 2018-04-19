@@ -12,6 +12,8 @@ module PageSerializer
       }
     end
 
+    private
+
     def components
       c = []
 
@@ -36,7 +38,7 @@ module PageSerializer
     end
 
     def title
-      ""
+      raise StandardError, "Please use a specific page serializer"
     end
   end
 end
