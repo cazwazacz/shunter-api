@@ -6,6 +6,6 @@ class BaseSerializer
   private
 
   def content
-    raise StandardError, "Please use a serializer"
+    raise StandardError, "You must implement #content."
   end
 end
