@@ -23,13 +23,12 @@ class PeopleController < ApplicationController
 
   # def index
   #   @people, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'Person', ::Grom::Node::BLANK)
-  #   render json: Serializers::List.new(@people, Person, 'people').produce_json
+  #   render json: PageSerializer::ListPageSerializer.new(@people, Person, 'people', @letters, params[:letter]).produce_json
   # end
 
   def letters
     @people, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'Person', ::Grom::Node::BLANK)
-    # render json: Serializers::List.new(@people, Person, 'people', @letters, params[:letter]).produce_json
-    render json: Serializers::ListPage.new(@people, Person, 'people', @letters, params[:letter]).to_h
+    render json: PageSerializer::ListPageSerializer.new(@people, ComponentSerializer::PersonComponentSerializer, 'people', @letters, params[:letter]).to_h
   end
 
   private

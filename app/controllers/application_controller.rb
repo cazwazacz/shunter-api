@@ -7,7 +7,6 @@ class ApplicationController < ActionController::API
   include Parliament::Utils::Helpers::ApplicationHelper
   include Parliament::Utils::Helpers::VCardHelper
   include PageSerializer
-  include Serializers
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   # prpotect_from_forgery with: :exception
