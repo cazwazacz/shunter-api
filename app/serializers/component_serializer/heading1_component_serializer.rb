@@ -5,7 +5,7 @@ module ComponentSerializer
     end
 
     def name
-      "heading 1"
+      "heading1"
     end
 
     def data
