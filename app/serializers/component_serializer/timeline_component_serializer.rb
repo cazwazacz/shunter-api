@@ -7,6 +7,8 @@ module ComponentSerializer
       @opposition_incumbencies = opposition_incumbencies
     end
 
+    private
+
     def name
       "timeline"
     end

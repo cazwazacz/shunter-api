@@ -8,6 +8,8 @@ module PageSerializer
       @opposition_incumbencies = opposition_incumbencies
     end
 
+    private
+
     def title
       "#{@person.display_name} - UK Parliament"
     end

@@ -3,6 +3,8 @@ class BaseSerializer
     content
   end
 
+  private
+
   def content
     raise StandardError, "Please use a serializer"
   end

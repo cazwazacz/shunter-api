@@ -4,6 +4,8 @@ module ComponentSerializer
       @person = person
     end
 
+    private
+
     def name
       "related-links"
     end

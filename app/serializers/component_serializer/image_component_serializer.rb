@@ -4,6 +4,8 @@ module ComponentSerializer
       @object = object
     end
 
+    private
+
     def name
       "image"
     end

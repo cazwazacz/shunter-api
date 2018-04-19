@@ -1,6 +1,8 @@
 module ComponentSerializer
   class BaseComponentSerializer < BaseSerializer
 
+    private
+
     def content
       {
           name: name,

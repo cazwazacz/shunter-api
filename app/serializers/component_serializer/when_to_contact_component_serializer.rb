@@ -3,6 +3,8 @@ module ComponentSerializer
     def initialize
     end
 
+    private
+
     def name
       "when-to-contact"
     end

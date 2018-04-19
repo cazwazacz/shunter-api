@@ -7,6 +7,13 @@ module ComponentSerializer
       @opposition_incumbencies = opposition_incumbencies
     end
 
+    def current_roles
+      history = RoleHelper.create_role_history(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies)
+      RoleHelper.organise_roles(history[:current]) if history[:current]
+    end
+
+    private
+
     def name
       "roles"
     end
@@ -20,11 +27,6 @@ module ComponentSerializer
           "template": "roles",
           "role-list": current_roles
       }
-    end
-
-    def current_roles
-      history = RoleHelper.create_role_history(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies)
-      RoleHelper.organise_roles(history[:current]) if history[:current]
     end
   end
 end

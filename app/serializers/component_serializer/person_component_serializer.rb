@@ -4,6 +4,8 @@ module ComponentSerializer
       @person = person
     end
 
+    private
+
     def content
       json_hash = {
           "display_name": "#{@person.display_name}",
@@ -16,8 +18,6 @@ module ComponentSerializer
       end
       json_hash
     end
-
-    private
 
     def get_image_url
       image_url = "https://s3-eu-west-1.amazonaws.com/web1live.pugin-website/1.7.6/images/placeholder_members_image.png"
