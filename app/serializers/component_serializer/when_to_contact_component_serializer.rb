@@ -1,5 +1,5 @@
-module Serializers
-  class WhenToContact < Base
+module ComponentSerializer
+  class WhenToContactComponentSerializer < BaseComponentSerializer
     def initialize
     end
 

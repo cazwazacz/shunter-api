@@ -1,5 +1,6 @@
 require_relative './base'
 require_relative './page'
+require_relative './component'
 require_relative './components/contact'
 require_relative './components/image'
 require_relative './components/person'

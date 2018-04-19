@@ -6,10 +6,11 @@ class ApplicationController < ActionController::API
   include Pugin::Helpers::ControllerHelpers
   include Parliament::Utils::Helpers::ApplicationHelper
   include Parliament::Utils::Helpers::VCardHelper
+  include PageSerializer
   include Serializers
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  # protect_from_forgery with: :exception
+  # prpotect_from_forgery with: :exception
 
   # layout 'pugin/layouts/pugin'
 
