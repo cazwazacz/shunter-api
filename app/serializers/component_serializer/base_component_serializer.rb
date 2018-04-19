@@ -11,11 +11,11 @@ module ComponentSerializer
     end
 
     def name
-      raise StandardError, "Please specify name"
+      raise StandardError, "You must implement #name."
     end
 
     def data
-      raise StandardError, "Please specify data"
+      raise StandardError, "You must implement #data."
     end
   end
 end
