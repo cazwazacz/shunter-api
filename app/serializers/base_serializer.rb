@@ -4,6 +4,6 @@ class BaseSerializer
   end
 
   def content
-    {}
+    raise StandardError, "Please use a serializer"
   end
 end
