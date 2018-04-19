@@ -6,6 +6,13 @@ module Serializers
     end
 
     def content
+      {
+          name: "letter-navigation",
+          data: data
+      }
+    end
+
+    def data
       ("A".."Z").map do |letter|
         presence = @letters.include?(letter) ? true : nil
         { letter: letter, presence: presence, active: active?(letter) }
