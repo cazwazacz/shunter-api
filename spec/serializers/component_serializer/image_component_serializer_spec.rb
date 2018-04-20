@@ -6,7 +6,7 @@ describe ComponentSerializer::ImageComponentSerializer do
   let (:serializer) { described_class.new(object) }
 
   context '#to_h' do
-    it 'returns a hash with the name and data' do
+    it 'returns a hash with the name and image data' do
       data = {
           template: 'person-image',
           'figure-url': '/media/321',
