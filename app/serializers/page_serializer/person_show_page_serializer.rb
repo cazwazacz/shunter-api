@@ -22,7 +22,7 @@ module PageSerializer
       c << ComponentSerializer::ImageComponentSerializer.new(@person).to_h if @person.image_id && @person.image_id != 'placeholder'
       c << ComponentSerializer::WhenToContactComponentSerializer.new.to_h
       c << ComponentSerializer::ContactComponentSerializer.new(@person).to_h if @person.current_seat_incumbency.contact_points.any?
-      c << ComponentSerializer::RolesComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).to_h if @person.incumbencies.any? || @committee_memberships.any?
+      c << ComponentSerializer::RolesComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies, RoleHelper).to_h if @person.incumbencies.any? || @committee_memberships.any?
       c << ComponentSerializer::TimelineComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).to_h if @person.incumbencies.any? || @committee_memberships.any?
       c << ComponentSerializer::RelatedLinksComponentSerializer.new(@person).to_h if @person.weblinks? || (@person.image_id && @person.image_id != 'placeholder')
 
