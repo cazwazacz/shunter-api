@@ -1,10 +1,12 @@
 module ComponentSerializer
   class TimelineComponentSerializer < BaseComponentSerializer
-    def initialize(seat_incumbencies, committee_memberships, government_incumbencies, opposition_incumbencies)
+    def initialize(seat_incumbencies, committee_memberships, government_incumbencies, opposition_incumbencies, role_helper = RoleHelper, roles_component_serializer = ComponentSerializer::RolesComponentSerializer)
       @seat_incumbencies = seat_incumbencies
       @committee_memberships = committee_memberships
       @government_incumbencies = government_incumbencies
       @opposition_incumbencies = opposition_incumbencies
+      @role_helper = role_helper
+      @roles_component_serializer = roles_component_serializer
     end
 
     private
@@ -25,9 +27,9 @@ module ComponentSerializer
     end
 
     def timeline_roles
-      history = RoleHelper.create_role_history(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies)
-      current_roles = ComponentSerializer::RolesComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).current_roles
-      RoleHelper.build_timeline(history, current_roles)
+      history = @role_helper.create_role_history(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies)
+      current_roles = @roles_component_serializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).current_roles
+      @role_helper.build_timeline(history, current_roles)
     end
   end
 end
