@@ -26,7 +26,7 @@ module ComponentSerializer
 
     def timeline_roles
       history = RoleHelper.create_role_history(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies)
-      current_roles = ComponentSerializer::RolesComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies, RoleHelper).current_roles
+      current_roles = ComponentSerializer::RolesComponentSerializer.new(@seat_incumbencies, @committee_memberships, @government_incumbencies, @opposition_incumbencies).current_roles
       RoleHelper.build_timeline(history, current_roles)
     end
   end
