@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::SubheadingComponentSerializer do
+RSpec.describe ComponentSerializer::SubheadingComponentSerializer do
 
   let(:party) { double('party', name: 'Great') }
   let(:current_party_membership) { double('current_party_membership', party: party) }

@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::WhenToContactComponentSerializer do
+RSpec.describe ComponentSerializer::WhenToContactComponentSerializer do
   context '#to_h' do
     it 'returns a hash with the name and when to contact data' do
       data =       {

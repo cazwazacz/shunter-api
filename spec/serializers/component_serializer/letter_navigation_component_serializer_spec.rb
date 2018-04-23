@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::LetterNavigationComponentSerializer do
+RSpec.describe ComponentSerializer::LetterNavigationComponentSerializer do
 
   let (:active_letter) { 'C' }
   let (:letters) { %{A C} }

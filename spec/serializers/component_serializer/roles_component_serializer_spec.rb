@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::RolesComponentSerializer do
+RSpec.describe ComponentSerializer::RolesComponentSerializer do
   let(:history) { { current: true } }
   let(:role_helper_double) { double('role_helper_double', create_role_history: history, organise_roles: 'hello') }
   let(:serializer) { described_class.new(1, 2, 3, 4, role_helper_double) }

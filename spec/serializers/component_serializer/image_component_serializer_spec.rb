@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::ImageComponentSerializer do
+RSpec.describe ComponentSerializer::ImageComponentSerializer do
   let(:object) { double('object', graph_id: '321', display_name: 'Diane Abbott', image_id: 123) }
 
   let (:serializer) { described_class.new(object) }

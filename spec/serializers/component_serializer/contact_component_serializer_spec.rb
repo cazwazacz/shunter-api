@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::ContactComponentSerializer do
+RSpec.describe ComponentSerializer::ContactComponentSerializer do
 
   let (:postal_address_1) { double('postal_address_1', full_address: 'here') }
   let (:postal_address_2) { double('postal_address_2', full_address: 'there') }

@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::PersonComponentSerializer do
+RSpec.describe ComponentSerializer::PersonComponentSerializer do
 
   let(:constituency) { double('constituency', name: 'Hackney North') }
   let(:current_seat_incumbency) { double('current_seat_incumbency', constituency: constituency) }

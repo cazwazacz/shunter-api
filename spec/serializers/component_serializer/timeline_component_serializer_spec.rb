@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::TimelineComponentSerializer do
+RSpec.describe ComponentSerializer::TimelineComponentSerializer do
   let(:roles_component_serializer_instance) { double('roles_component_serializer_instance', current_roles: 'current_roles') }
   let(:roles_component_serializer_double) { double('roles_component_serializer_double', new: roles_component_serializer_instance) }
   let(:role_helper_double) { double('role_helper_double', create_role_history: '', build_timeline: 'timeline built') }

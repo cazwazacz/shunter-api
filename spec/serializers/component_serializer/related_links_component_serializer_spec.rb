@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::RelatedLinksComponentSerializer do
+RSpec.describe ComponentSerializer::RelatedLinksComponentSerializer do
 
   let (:person_double) {
     double('person_double',

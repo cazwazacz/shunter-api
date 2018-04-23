@@ -1,6 +1,6 @@
 require_relative '../../rails_helper'
 
-describe ComponentSerializer::Heading1ComponentSerializer do
+RSpec.describe ComponentSerializer::Heading1ComponentSerializer do
   let(:person) { double('person', full_name: 'Diane Abbott') }
 
   let (:serializer) { described_class.new(person) }
