@@ -3,12 +3,25 @@ require 'spec_helper'
 
 require 'simplecov'
 require 'coveralls'
+require 'webmock'
+require 'webmock/rspec'
+require 'vcr'
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
    Coveralls::SimpleCov::Formatter,
    SimpleCov::Formatter::HTMLFormatter
 ])
 SimpleCov.start
 
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock # or :fakeweb
+  config.configure_rspec_metadata!
+
+  # Dynamically filter our sensitive information
+  config.filter_sensitive_data('<AUTH_TOKEN>') { ENV['OPENSEARCH_AUTH_TOKEN'] }
+  config.filter_sensitive_data('http://localhost:3030') { ENV['OPENSEARCH_DESCRIPTION_URL'] }
+end
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)

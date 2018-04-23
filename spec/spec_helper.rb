@@ -91,4 +91,9 @@ RSpec.configure do |config|
   # test failures related to randomization by passing the same `--seed` value
   # as the one that triggered the failure.
   Kernel.srand config.seed
+
+  config.before(:each) do
+    allow(BANDIERA_CLIENT).to receive(:enabled?).and_return(false)
+    allow(Pugin::PuginBandieraClient::BANDIERA_CLIENT).to receive(:get_features_for_group).and_return({})
+  end
 end
