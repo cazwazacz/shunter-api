@@ -27,4 +27,8 @@ class ApplicationController < ActionController::API
   rescue_from Parliament::NoContentResponseError do |error|
     raise ActionController::RoutingError, error.message
   end
+
+  def render_page(serializer)
+    render json: serializer.to_h
+  end
 end
