@@ -75,6 +75,16 @@ RSpec.describe PageSerializer::PersonShowPageSerializer do
       end
     end
 
+    describe 'when-to-contact component serializer is not initialized' do
+      it 'if person  is not a current mp' do
+        allow(ComponentSerializer::WhenToContactComponentSerializer).to receive(:new)
+        allow(person_double).to receive(:current_mp?) { false }
+
+        person_show_page_serializer.to_h
+        expect(ComponentSerializer::WhenToContactComponentSerializer).not_to have_received(:new)
+      end
+    end
+
     describe 'contact component serializer is not initialized' do
       it 'if contact points is an empty array' do
         allow(ComponentSerializer::ContactComponentSerializer).to receive(:new).with(person_double)
