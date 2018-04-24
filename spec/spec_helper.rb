@@ -92,6 +92,7 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 
+  # Configure Bandiera features
   config.before(:each) do
     allow(BANDIERA_CLIENT).to receive(:enabled?).and_return(false)
     allow(Pugin::PuginBandieraClient::BANDIERA_CLIENT).to receive(:get_features_for_group).and_return({})
