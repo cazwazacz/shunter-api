@@ -48,4 +48,36 @@ RSpec.describe PeopleController, vcr: true do
     end
 
   end
+
+  describe 'GET letters' do
+    before(:each) do
+      allow(PageSerializer::ListPageSerializer).to receive(:new)
+      get :letters, params: { letter: 'A' }
+    end
+
+    it 'should have a response with status 200' do
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'assigns @people and @letters' do
+      assigns(:people).each do |person|
+        expect(person).to be_a(Grom::Node)
+        expect(person.type).to eq('https://id.parliament.uk/schema/Person')
+      end
+
+      assigns(:letters).each do |letter|
+        expect(letter).to be_a(String)
+      end
+    end
+
+    it 'calls the ListPageSerializer with the correct arguments' do
+      expect(PageSerializer::ListPageSerializer).to have_received(:new).with(
+        assigns(:people),
+        ComponentSerializer::PersonComponentSerializer,
+        'people',
+        assigns(:letters),
+        'A'
+      )
+    end
+  end
 end
