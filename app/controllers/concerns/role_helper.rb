@@ -62,9 +62,9 @@ module RoleHelper
 
     roles = []
     roles += incumbencies
-    roles += committee_memberships.to_a if Pugin::Feature::Bandiera.show_committees?
-    roles += government_incumbencies.to_a if Pugin::Feature::Bandiera.show_government_roles?
-    roles += opposition_incumbencies.to_a if Pugin::Feature::Bandiera.show_opposition_roles?
+    roles += committee_memberships.to_a
+    roles += government_incumbencies.to_a
+    roles += opposition_incumbencies.to_a
 
     HistoryHelper.reset
     HistoryHelper.add(roles)
