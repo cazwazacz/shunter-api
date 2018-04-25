@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
 
-  before_action :set_header, :data_check, :build_request, except: :postcode_lookup
+  before_action :data_check, :build_request, except: :postcode_lookup
 
   ROUTE_MAP = {
     index:   proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.person_index },
@@ -40,12 +40,6 @@ class PeopleController < ApplicationController
         @letters,
         params[:letter]
     ))
-  end
-
-  private
-
-  def set_header
-    response.set_header("Content-Type", "application/x-shunter+json")
   end
 
 end
