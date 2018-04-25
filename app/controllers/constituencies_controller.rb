@@ -29,18 +29,8 @@ class ConstituenciesController < ApplicationController
 
     @party = @current_party ? @current_party : @party.first
 
-    render_page({
-      "components": [
-          {
-              "name": "map",
-              "data":
-                  {
-                      "json_location": @json_location,
-                      "constituency_name": @constituency.name
-                  }
-          }
-      ]
-    })
+    render_page(PageSerializer::ConstituencyShowPageSerializer.new(@constituency, @json_location))
+
   end
 
   # Renders a constituency that has a constituency area object on map view given a constituency id.
