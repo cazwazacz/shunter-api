@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/people',             to: 'people#index'
   get '/people/:person_id',  to: 'people#show'
   get '/people/a-z/:letter', to: 'people#letters'
+
 end
