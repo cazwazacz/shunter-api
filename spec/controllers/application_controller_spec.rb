@@ -2,48 +2,26 @@ require_relative '../rails_helper'
 
 RSpec.describe ApplicationController do
 
-  let(:serialiser) {
-    Class.new do
-      def to_h
-        { foo: true, bar: 'baz' }
-      end
-    end
-  }
-
-  let(:response) {
-    Class.new do
-      def content_type=(content_type); end
-
-      def committed?; end
-
-      def body; end
-    end
-  }
-
-  controller(ApplicationController) do
-    def index
-      render_page(serialiser)
-    end
-
-    def response
-
-    end
-  end
-
-  # let(:serializer) { double('serializer') }
-  # let(:application) { described_class.new }
+  let(:serializer) { double('serializer') }
+  let(:response) { double('response', headers: {}) }
 
   context '#render_page' do
-    # it 'calls to_h on the serializer' do
-    #   # expect(serializer).to receive(:to_h)
-    #   # allow(serializer).to receive(:to_h)
-    #   # allow(serializer).to receive(:content_type)
-    #   # application.render_page(serializer)
-    # end
+    it 'calls the serializer\'s #to_h method' do
+      allow(subject).to receive(:render)
+      allow(serializer).to receive(:to_h)
 
-    xit 'returns the expected string' do
-      get :index
-      expect(response.body).to eq('{"foo":true,"bar":"baz"}')
+      subject.render_page(serializer, response)
+
+      headers = {}
+
+      headers['Content-Type'] = 'application/x-shunter+json'
+      headers['Access-Control-Allow-Origin'] = '*'
+      headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
+      headers['Access-Control-Request-Method'] = '*'
+      headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+
+      expect(response.headers).to eq headers
+      expect(subject).to have_received(:render).with(json: serializer.to_h)
     end
   end
 
