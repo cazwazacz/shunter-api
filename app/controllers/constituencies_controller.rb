@@ -29,7 +29,15 @@ class ConstituenciesController < ApplicationController
 
     @party = @current_party ? @current_party : @party.first
 
-    render_page(PageSerializer::ConstituencyShowPageSerializer.new(@constituency, @json_location))
+    @current_party_member = @current_incumbency.member
+
+    render_page(
+        PageSerializer::ConstituencyShowPageSerializer.new(
+            @constituency,
+            @json_location,
+            @current_party_member
+        )
+    )
 
   end
 
