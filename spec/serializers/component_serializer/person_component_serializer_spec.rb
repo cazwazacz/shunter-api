@@ -33,12 +33,14 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
         hash[:'role'] = 'MP for Hackney North'
         hash['current_party'] = 'Labour'
       end
+
       expect(serializer.to_h).to eq hash
     end
 
     it 'placeholder image url is used when the image_id is placeholder' do
       allow(person_double).to receive(:image_id) { 'placeholder' }
       placeholder_image_url = 'https://s3-eu-west-1.amazonaws.com/web1live.pugin-website/1.7.6/images/placeholder_members_image.png'
+
       expect(serializer.to_h[:'image_url']).to eq placeholder_image_url
     end
 
@@ -47,6 +49,7 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { false }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { false }
+
       expect(serializer.to_h['current_party']).to eq nil
     end
 
@@ -55,6 +58,7 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { true }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { false }
+
       expect(serializer.to_h['current_party']).to eq nil
     end
 
@@ -63,6 +67,7 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { false }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { true }
+
       expect(serializer.to_h['current_party']).to eq 'Labour'
     end
 
@@ -71,6 +76,7 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { false }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { false }
+
       expect(serializer.to_h[:'role']).to eq 'Former MP'
     end
 
@@ -79,6 +85,7 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { true }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { false }
+
       expect(serializer.to_h[:'role']).to eq 'Former Member of the House of Lords'
     end
 
@@ -87,7 +94,22 @@ RSpec.describe ComponentSerializer::PersonComponentSerializer do
       allow(person_double).to receive(:former_lord?) { false }
       allow(person_double).to receive(:current_mp?) { false }
       allow(person_double).to receive(:current_lord?) { true }
+
       expect(serializer.to_h[:'role']).to eq 'hi and hello'
+    end
+  end
+
+  context 'for a constituency show page' do
+    context '#to_h' do
+      let(:options) { { constituency_show_page: true, constituency_name: 'Bath' } }
+      let(:constituency_person_serializer) { described_class.new(person_double, options) }
+
+      it 'gets correct information when constituency show page option is provided' do
+        allow(person_double).to receive(:current_mp?) { false }
+
+        expect(constituency_person_serializer.to_h['current_party']).to eq 'Labour'
+        expect(constituency_person_serializer.to_h[:'role']).to eq 'MP for Bath'
+      end
     end
   end
 end
