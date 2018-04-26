@@ -35,7 +35,8 @@ class ConstituenciesController < ApplicationController
         PageSerializer::ConstituencyShowPageSerializer.new(
             @constituency,
             @json_location,
-            @current_party_member
+            @current_party_member,
+            @seat_incumbencies
         )
     )
 

@@ -7,7 +7,7 @@ module ComponentSerializer
     private
 
     def name
-      "constituency-subheading"
+      'constituency-subheading'
     end
 
     def data
