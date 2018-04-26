@@ -15,7 +15,7 @@ class ConstituenciesController < ApplicationController
   }.freeze
 
   def show
-    @constituency, @seat_incumbencies, @party = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'ConstituencyGroup', 'SeatIncumbency', 'Party')
+    @constituency, @seat_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'ConstituencyGroup', 'SeatIncumbency')
     # Instance variable for single MP pages
     @single_mp = true
     @constituency = @constituency.first
@@ -24,10 +24,6 @@ class ConstituenciesController < ApplicationController
     @current_incumbency = @seat_incumbencies.shift if !@seat_incumbencies.empty? && @seat_incumbencies.first.current?
 
     @json_location = constituency_map_path(@constituency.graph_id, format: 'json')
-
-    @current_party = @current_incumbency.member.current_party if @current_incumbency
-
-    @party = @current_party ? @current_party : @party.first
 
     @current_party_member = @current_incumbency.member
 

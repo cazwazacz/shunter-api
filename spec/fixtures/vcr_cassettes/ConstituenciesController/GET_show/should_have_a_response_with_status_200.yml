@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.parliament.uk/Staging/fixed-query/constituency_by_id?constituency_id=yyocmekJ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/n-triples
+      User-Agent:
+      - Ruby
+      Ocp-Apim-Subscription-Key:
+      - "<AUTH_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '850'
+      Content-Type:
+      - application/n-triples
+      Expires:
+      - "-1"
+      Request-Context:
+      - appId=cid-v1:330aa411-57af-491f-b22a-1cab7d08a6a9
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Thu, 26 Apr 2018 15:17:17 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: "<https://id.parliament.uk/yyocmekJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/yyocmekJ>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/yyocmekJ> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Berwick-upon-Tweed\" .\r\n<https://id.parliament.uk/yyocmekJ> <https://id.parliament.uk/schema/constituencyGroupOnsCode>
+        \"E14000554\" .\r\n<https://id.parliament.uk/yyocmekJ> <http://data.ordnancesurvey.co.uk/ontology/admingeo/inEuropeanRegion>
+        <http://data.ordnancesurvey.co.uk/id/7000000000041422> .\r\n<http://data.ordnancesurvey.co.uk/id/7000000000041422>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion>
+        .\r\n<http://data.ordnancesurvey.co.uk/id/7000000000041422> <http://data.ordnancesurvey.co.uk/ontology/admingeo/gssCode>
+        \"E15000001\" .\r\n<http://data.ordnancesurvey.co.uk/id/7000000000041422>
+        <http://www.w3.org/2004/02/skos/core#prefLabel> \"North East\" .\r\n<https://id.parliament.uk/yyocmekJ>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/dcXPjdVZ>
+        .\r\n<https://id.parliament.uk/dcXPjdVZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/dcXPjdVZ>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/RAhXqiEz>
+        .\r\n<https://id.parliament.uk/RAhXqiEz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/RAhXqiEz>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/kMJFcI2Z>
+        .\r\n<https://id.parliament.uk/RAhXqiEz> <https://id.parliament.uk/schema/parliamentaryIncumbencyStartDate>
+        \"2017-06-08+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/kMJFcI2Z>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Person>
+        .\r\n<https://id.parliament.uk/kMJFcI2Z> <https://id.parliament.uk/schema/personGivenName>
+        \"Anne-Marie\" .\r\n<https://id.parliament.uk/kMJFcI2Z> <https://id.parliament.uk/schema/memberHasMemberImage>
+        <https://id.parliament.uk/7eJJAPAx> .\r\n<https://id.parliament.uk/kMJFcI2Z>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Mrs Anne-Marie Trevelyan\"
+        .\r\n<https://id.parliament.uk/kMJFcI2Z> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/rSWoNtqk> .\r\n<https://id.parliament.uk/7eJJAPAx>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/MemberImage>
+        .\r\n<https://id.parliament.uk/rSWoNtqk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/rSWoNtqk>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/DIifZMjq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Party> .\r\n<https://id.parliament.uk/DIifZMjq>
+        <https://id.parliament.uk/schema/partyName> \"Conservative\" .\r\n<https://id.parliament.uk/dcXPjdVZ>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/Vv6tfrOn>
+        .\r\n<https://id.parliament.uk/Vv6tfrOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/Vv6tfrOn>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/i6sxDZUZ>
+        .\r\n<https://id.parliament.uk/Vv6tfrOn> <https://id.parliament.uk/schema/parliamentaryIncumbencyEndDate>
+        \"2015-03-30+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Vv6tfrOn>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyStartDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/i6sxDZUZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/i6sxDZUZ>
+        <https://id.parliament.uk/schema/personGivenName> \"Alan\" .\r\n<https://id.parliament.uk/i6sxDZUZ>
+        <https://id.parliament.uk/schema/memberHasMemberImage> <https://id.parliament.uk/j7WTKwNk>
+        .\r\n<https://id.parliament.uk/i6sxDZUZ> <http://example.com/F31CBD81AD8343898B49DC65743F0BDF>
+        \"Lord Beith\" .\r\n<https://id.parliament.uk/i6sxDZUZ> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/yrXvxmR9> .\r\n<https://id.parliament.uk/j7WTKwNk>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/MemberImage>
+        .\r\n<https://id.parliament.uk/yrXvxmR9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/yrXvxmR9>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/wKMInYxd>
+        .\r\n<https://id.parliament.uk/wKMInYxd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Party> .\r\n<https://id.parliament.uk/wKMInYxd>
+        <https://id.parliament.uk/schema/partyName> \"Liberal Democrat\" .\r\n<https://id.parliament.uk/dcXPjdVZ>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/WGrPNXlk>
+        .\r\n<https://id.parliament.uk/WGrPNXlk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/WGrPNXlk>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/kMJFcI2Z>
+        .\r\n<https://id.parliament.uk/WGrPNXlk> <https://id.parliament.uk/schema/parliamentaryIncumbencyEndDate>
+        \"2017-05-03+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/WGrPNXlk>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyStartDate> \"2015-05-07+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n"
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 15:17:12 GMT
+recorded_with: VCR 4.0.0
