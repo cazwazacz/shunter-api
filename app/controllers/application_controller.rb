@@ -29,7 +29,7 @@ class ApplicationController < ActionController::API
     raise ActionController::RoutingError, error.message
   end
 
-  def render_page(serializer)
+  def render_page(serializer, response = response)
     response.headers['Content-Type'] = 'application/x-shunter+json'
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
