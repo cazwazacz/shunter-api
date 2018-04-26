@@ -22,3 +22,5 @@
 /.idea
 
 coverage
+
+/spec/examples.txt
