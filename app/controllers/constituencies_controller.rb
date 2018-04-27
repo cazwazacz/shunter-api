@@ -5,17 +5,13 @@ class ConstituenciesController < ApplicationController
   ROUTE_MAP = {
       index:           proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_index },
       show:            proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_by_id.set_url_params({ constituency_id: params[:constituency_id] }) },
-      lookup:          proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_lookup.set_url_params({ property: params[:source], value: params[:id] }) },
-      a_to_z_current:  proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_current_a_to_z },
-      current:         proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_current },
       map:             proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_map.set_url_params({ constituency_id: params[:constituency_id] }) },
-      letters:         proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_by_initial.set_url_params({ initial: params[:letter] }) },
-      current_letters: proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_current_by_initial.set_url_params({ initial: params[:letter] }) },
-      a_to_z:          proc { Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_a_to_z }
+      letters:         proc { |params| Parliament::Utils::Helpers::ParliamentHelper.parliament_request.constituency_by_initial.set_url_params({ initial: params[:letter] }) }
   }.freeze
 
   def show
     @constituency, @seat_incumbencies = Parliament::Utils::Helpers::FilterHelper.filter(@request, 'ConstituencyGroup', 'SeatIncumbency')
+
     # Instance variable for single MP pages
     @single_mp = true
     @constituency = @constituency.first
@@ -35,7 +31,6 @@ class ConstituenciesController < ApplicationController
             @seat_incumbencies
         )
     )
-
   end
 
   # Renders a constituency that has a constituency area object on map view given a constituency id.
@@ -72,4 +67,18 @@ class ConstituenciesController < ApplicationController
     end
   end
 
+
+
+  def letters
+    @constituencies, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'ConstituencyGroup', ::Grom::Node::BLANK)
+    @constituencies = @constituencies.select { |constituency| constituency.current? }
+
+    render_page(PageSerializer::ListPageSerializer.new(
+        @constituencies,
+        ComponentSerializer::ConstituencyComponentSerializer,
+        'constituencies',
+        @letters,
+        params[:letter]
+    ))
+  end
 end
