@@ -6,7 +6,7 @@ RSpec.describe ApplicationController do
   let(:response) { double('response', headers: {}) }
 
   context '#render_page' do
-    it 'calls the serializer\'s #to_h method' do
+    it 'calls the serializer\'s #to_h method and sets the required response headers' do
       allow(subject).to receive(:render)
       allow(serializer).to receive(:to_h)
 
