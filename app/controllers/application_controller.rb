@@ -30,12 +30,7 @@ class ApplicationController < ActionController::API
   end
 
   def render_page(serializer, response_parameter = response)
-  # def render_page(serializer)
     response_parameter.headers['Content-Type'] = 'application/x-shunter+json'
-    response_parameter.headers['Access-Control-Allow-Origin'] = '*'
-    response_parameter.headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
-    response_parameter.headers['Access-Control-Request-Method'] = '*'
-    response_parameter.headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
 
     render json: serializer.to_h
   end
