@@ -1,8 +1,9 @@
 module ComponentSerializer
   class LetterNavigationComponentSerializer < BaseComponentSerializer
-    def initialize(letters, active_letter)
+    def initialize(letters, active_letter, object_name)
       @letters = letters
       @active_letter = active_letter
+      @object_name = object_name
     end
 
     private
@@ -12,7 +13,10 @@ module ComponentSerializer
     end
 
     def data
-      letter_navigation_data
+      {
+          'object_name': @object_name,
+          letters: letter_navigation_data
+      }
     end
 
     def letter_navigation_data

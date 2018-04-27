@@ -1,9 +1,9 @@
 module PageSerializer
   class ListPageSerializer < PageSerializer::BasePageSerializer
-    def initialize(objects, klass, objects_name, letters, active_letter = 'all')
+    def initialize(objects, klass, object_name, letters, active_letter = 'all')
       @objects = objects
       @klass = klass
-      @object_name = objects_name
+      @object_name = object_name
       @letters = letters
       @active_letter = active_letter
     end
@@ -20,7 +20,7 @@ module PageSerializer
 
     def content
       [
-          ComponentSerializer::LetterNavigationComponentSerializer.new(@letters, @active_letter).to_h,
+          ComponentSerializer::LetterNavigationComponentSerializer.new(@letters, @active_letter, @object_name).to_h,
           { name: @object_name, data: list }
       ]
     end
