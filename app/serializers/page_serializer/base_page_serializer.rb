@@ -38,7 +38,7 @@ module PageSerializer
     end
 
     def title
-      raise StandardError, "Please use a specific page serializer"
+      raise StandardError, "You must implement #title"
     end
   end
 end
