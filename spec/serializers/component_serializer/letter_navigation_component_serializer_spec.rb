@@ -4,7 +4,7 @@ RSpec.describe ComponentSerializer::LetterNavigationComponentSerializer do
 
   let (:active_letter) { 'C' }
   let (:letters) { %{A C} }
-  let (:serializer) { described_class.new(letters, active_letter) }
+  let (:serializer) { described_class.new(letters, active_letter, 'object_name') }
 
   context '#to_h' do
     it 'returns the navigation data' do
@@ -36,7 +36,7 @@ RSpec.describe ComponentSerializer::LetterNavigationComponentSerializer do
           { letter: 'Y', presence: nil, active: nil },
           { letter: 'Z', presence: nil, active: nil }
       ]
-      hash = { name: 'letter-navigation', data: data }
+      hash = { name: 'letter-navigation', data: { object_name: 'object_name', letters: data } }
       expect(serializer.to_h).to eq hash
     end
   end
