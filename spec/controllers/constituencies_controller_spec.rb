@@ -38,4 +38,36 @@ RSpec.describe ConstituenciesController, vcr: true do
       )
     end
   end
+
+  describe 'GET letters' do
+    before(:each) do
+      allow(PageSerializer::ListPageSerializer).to receive(:new)
+      get :letters, params: { letter: 'a' }
+    end
+
+    it 'should have a response with status 200' do
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'assigns @constituencies and @letters' do
+      assigns(:constituencies).each do |constituency|
+        expect(constituency).to be_a(Grom::Node)
+        expect(constituency.type).to eq('https://id.parliament.uk/schema/ConstituencyGroup')
+      end
+
+      assigns(:letters).each do |letter|
+        expect(letter).to be_a(String)
+      end
+    end
+
+    it 'calls the ListPageSerializer with the correct arguments' do
+      expect(PageSerializer::ListPageSerializer).to have_received(:new).with(
+        assigns[:constituencies],
+        ComponentSerializer::ConstituencyComponentSerializer,
+        'constituencies',
+        assigns[:letters],
+        'a'
+      )
+    end
+  end
 end

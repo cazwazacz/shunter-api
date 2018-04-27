@@ -1,0 +1,1103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.parliament.uk/Staging/fixed-query/constituency_by_initial?initial=a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/n-triples
+      User-Agent:
+      - Ruby
+      Ocp-Apim-Subscription-Key:
+      - "<AUTH_TOKEN>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '6524'
+      Content-Type:
+      - application/n-triples
+      Expires:
+      - "-1"
+      Request-Context:
+      - appId=cid-v1:330aa411-57af-491f-b22a-1cab7d08a6a9
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Fri, 27 Apr 2018 16:16:28 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: "<https://id.parliament.uk/bIup9DnQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/bIup9DnQ>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Accrington\" .\r\n<https://id.parliament.uk/bIup9DnQ>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/bIup9DnQ> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/IOGWkx3C>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/IOGWkx3C> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashford\" .\r\n<https://id.parliament.uk/IOGWkx3C> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/IOGWkx3C>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/i52YYk1A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/i52YYk1A>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdeen Central\"
+        .\r\n<https://id.parliament.uk/i52YYk1A> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/i52YYk1A>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/b7QiSoSB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/b7QiSoSB>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Amber Valley\" .\r\n<https://id.parliament.uk/b7QiSoSB>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/b7QiSoSB> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/7mgxJeZi>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/7mgxJeZi> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen South\" .\r\n<https://id.parliament.uk/7mgxJeZi> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/7mgxJeZi>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/wNxYdde2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/wNxYdde2>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Acton\" .\r\n<https://id.parliament.uk/wNxYdde2>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/wNxYdde2> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/WGyQJ9Ey>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/WGyQJ9Ey> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashford\" .\r\n<https://id.parliament.uk/WGyQJ9Ey> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/WGyQJ9Ey>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/kzTXHDdv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/kzTXHDdv>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Arundel\" .\r\n<https://id.parliament.uk/kzTXHDdv>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/kzTXHDdv> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/91PZU77K>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/91PZU77K> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aldershot\" .\r\n<https://id.parliament.uk/91PZU77K> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/91PZU77K>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/0ktXoG1R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/0ktXoG1R>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Anglesey\" .\r\n<https://id.parliament.uk/0ktXoG1R>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/0ktXoG1R> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/kbA3DtwS>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/kbA3DtwS> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aylesbury\" .\r\n<https://id.parliament.uk/kbA3DtwS> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/kbA3DtwS>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ASH4mKEA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/ASH4mKEA>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Argyll and Bute\"
+        .\r\n<https://id.parliament.uk/ASH4mKEA> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/ASH4mKEA>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/J7NbnA4c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/J7NbnA4c>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Alyn and Deeside\"
+        .\r\n<https://id.parliament.uk/J7NbnA4c> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/J7NbnA4c>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/AdXminYD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/AdXminYD>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ayrshire and Bute,
+        Bute and Northern\" .\r\n<https://id.parliament.uk/AdXminYD> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/AdXminYD>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/y26ze2EN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/y26ze2EN>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aylesbury\" .\r\n<https://id.parliament.uk/y26ze2EN>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/y26ze2EN> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/UxvpJmUu>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/UxvpJmUu> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberavon\" .\r\n<https://id.parliament.uk/UxvpJmUu> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/UxvpJmUu>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Ux6VeM5N> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Ux6VeM5N>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Abertillery\" .\r\n<https://id.parliament.uk/Ux6VeM5N>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Ux6VeM5N> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/POLbUSdy>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/POLbUSdy> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Arundel\" .\r\n<https://id.parliament.uk/POLbUSdy> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/POLbUSdy>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/R3O2M9kO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/R3O2M9kO>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashford\" .\r\n<https://id.parliament.uk/R3O2M9kO>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/R3O2M9kO> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/SuE4C2UM>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/SuE4C2UM> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Abertillery\" .\r\n<https://id.parliament.uk/SuE4C2UM> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/SuE4C2UM>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Js3T8AIg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Js3T8AIg>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aylesbury\" .\r\n<https://id.parliament.uk/Js3T8AIg>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Js3T8AIg> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/om8RXZXy>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/om8RXZXy> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashfield\" .\r\n<https://id.parliament.uk/om8RXZXy> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/om8RXZXy>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/FGrJCU1v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/FGrJCU1v>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdare\" .\r\n<https://id.parliament.uk/FGrJCU1v>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/FGrJCU1v> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/au1gbuHP>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/au1gbuHP> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Altrincham\" .\r\n<https://id.parliament.uk/au1gbuHP> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/au1gbuHP>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/XtTY5Lq3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/XtTY5Lq3>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberavon\" .\r\n<https://id.parliament.uk/XtTY5Lq3>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/XtTY5Lq3> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/lj3Kfz6M>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/lj3Kfz6M> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen North\" .\r\n<https://id.parliament.uk/lj3Kfz6M> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/lj3Kfz6M>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/wRGCJg0L> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/wRGCJg0L>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberavon\" .\r\n<https://id.parliament.uk/wRGCJg0L>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/wRGCJg0L> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/xU09NC6a>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/xU09NC6a> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen North\" .\r\n<https://id.parliament.uk/xU09NC6a> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/xU09NC6a>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/dE0Q6zRW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/dE0Q6zRW>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdeenshire and
+        Kincardineshire, Kincardine and Western\" .\r\n<https://id.parliament.uk/dE0Q6zRW>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/dE0Q6zRW> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/EhsJxbiL>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/EhsJxbiL> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Altrincham and Sale\" .\r\n<https://id.parliament.uk/EhsJxbiL> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/EhsJxbiL>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/8WFpQMt1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/8WFpQMt1>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Argyll and Bute\"
+        .\r\n<https://id.parliament.uk/8WFpQMt1> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/8WFpQMt1>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/nsFBqZPg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/nsFBqZPg>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aylesbury\" .\r\n<https://id.parliament.uk/nsFBqZPg>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/nsFBqZPg> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/6lIEX7BM>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/6lIEX7BM> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Armagh\" .\r\n<https://id.parliament.uk/6lIEX7BM> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/6lIEX7BM>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Os9s5ZyB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Os9s5ZyB>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Alyn and Deeside\"
+        .\r\n<https://id.parliament.uk/Os9s5ZyB> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Os9s5ZyB>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/hXuNOddy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/hXuNOddy>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ayr\" .\r\n<https://id.parliament.uk/hXuNOddy>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/hXuNOddy> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/W0ebQxxY>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/W0ebQxxY> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Anglesey\" .\r\n<https://id.parliament.uk/W0ebQxxY> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/W0ebQxxY>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/pwPJpIJr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/pwPJpIJr>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashton-under-Lyne\"
+        .\r\n<https://id.parliament.uk/pwPJpIJr> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/pwPJpIJr>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/REkjO8mA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/REkjO8mA>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashton-under-Lyne\"
+        .\r\n<https://id.parliament.uk/REkjO8mA> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/REkjO8mA>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Shl4uYax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Shl4uYax>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aylesbury\" .\r\n<https://id.parliament.uk/Shl4uYax>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Shl4uYax> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/3WIDxmOt>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/3WIDxmOt> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen North\" .\r\n<https://id.parliament.uk/3WIDxmOt> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/3WIDxmOt>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/X29f3Ujw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/X29f3Ujw>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Abertillery\" .\r\n<https://id.parliament.uk/X29f3Ujw>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/X29f3Ujw> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/T4dde9iV>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/T4dde9iV> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashford\" .\r\n<https://id.parliament.uk/T4dde9iV> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/T4dde9iV>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Vx6H1tCl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Vx6H1tCl>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldridge-Brownhills\"
+        .\r\n<https://id.parliament.uk/Vx6H1tCl> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Vx6H1tCl>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NDwx3vpi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/NDwx3vpi>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashton-under-Lyne\"
+        .\r\n<https://id.parliament.uk/NDwx3vpi> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/NDwx3vpi>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/WzqBuBfn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/WzqBuBfn>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Argyll\" .\r\n<https://id.parliament.uk/WzqBuBfn>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/WzqBuBfn> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/nBdIyFW0>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/nBdIyFW0> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Armagh\" .\r\n<https://id.parliament.uk/nBdIyFW0> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/nBdIyFW0>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/rV7SyBJJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/rV7SyBJJ>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdeen North\"
+        .\r\n<https://id.parliament.uk/rV7SyBJJ> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/rV7SyBJJ>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NXIzxbYQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/NXIzxbYQ>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldridge-Brownhills\"
+        .\r\n<https://id.parliament.uk/NXIzxbYQ> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/NXIzxbYQ>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Mik4O2ps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Mik4O2ps>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Altrincham and Sale\"
+        .\r\n<https://id.parliament.uk/Mik4O2ps> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Mik4O2ps>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/JzQPzQpf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/JzQPzQpf>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Amber Valley\" .\r\n<https://id.parliament.uk/JzQPzQpf>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/JzQPzQpf> <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat>
+        <https://id.parliament.uk/gPChmWWa> .\r\n<https://id.parliament.uk/gPChmWWa>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/HouseSeat>
+        .\r\n<https://id.parliament.uk/gPChmWWa> <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency>
+        <https://id.parliament.uk/55TSUMKQ> .\r\n<https://id.parliament.uk/55TSUMKQ>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/SeatIncumbency>
+        .\r\n<https://id.parliament.uk/55TSUMKQ> <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember>
+        <https://id.parliament.uk/1E9WUKmp> .\r\n<https://id.parliament.uk/1E9WUKmp>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Person>
+        .\r\n<https://id.parliament.uk/1E9WUKmp> <https://id.parliament.uk/schema/personGivenName>
+        \"Nigel\" .\r\n<https://id.parliament.uk/1E9WUKmp> <https://id.parliament.uk/schema/personFamilyName>
+        \"Mills\" .\r\n<https://id.parliament.uk/1E9WUKmp> <http://example.com/F31CBD81AD8343898B49DC65743F0BDF>
+        \"Nigel Mills\" .\r\n<https://id.parliament.uk/1E9WUKmp> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/IAxMJX8r> .\r\n<https://id.parliament.uk/IAxMJX8r>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/IAxMJX8r> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/DIifZMjq>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Party>
+        .\r\n<https://id.parliament.uk/DIifZMjq> <https://id.parliament.uk/schema/partyName>
+        \"Conservative\" .\r\n<https://id.parliament.uk/1E9WUKmp> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/O6D4xrFs> .\r\n<https://id.parliament.uk/O6D4xrFs>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/O6D4xrFs> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/1E9WUKmp>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/1cVu4rvi>
+        .\r\n<https://id.parliament.uk/1cVu4rvi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/1cVu4rvi>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/s2NAUGco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/s2NAUGco>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldershot\" .\r\n<https://id.parliament.uk/s2NAUGco>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/s2NAUGco> <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat>
+        <https://id.parliament.uk/CjIYgFqg> .\r\n<https://id.parliament.uk/CjIYgFqg>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/HouseSeat>
+        .\r\n<https://id.parliament.uk/CjIYgFqg> <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency>
+        <https://id.parliament.uk/abRgsHUm> .\r\n<https://id.parliament.uk/abRgsHUm>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/SeatIncumbency>
+        .\r\n<https://id.parliament.uk/abRgsHUm> <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember>
+        <https://id.parliament.uk/H2iqrFlO> .\r\n<https://id.parliament.uk/H2iqrFlO>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Person>
+        .\r\n<https://id.parliament.uk/H2iqrFlO> <https://id.parliament.uk/schema/personGivenName>
+        \"Leo\" .\r\n<https://id.parliament.uk/H2iqrFlO> <https://id.parliament.uk/schema/personFamilyName>
+        \"Docherty\" .\r\n<https://id.parliament.uk/H2iqrFlO> <http://example.com/F31CBD81AD8343898B49DC65743F0BDF>
+        \"Leo Docherty\" .\r\n<https://id.parliament.uk/H2iqrFlO> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/CeAdpXIE> .\r\n<https://id.parliament.uk/CeAdpXIE>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/CeAdpXIE> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/eVNK7Lqz>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/eVNK7Lqz> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aylesbury\" .\r\n<https://id.parliament.uk/eVNK7Lqz> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/eVNK7Lqz>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/l8ob429v>
+        .\r\n<https://id.parliament.uk/l8ob429v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/l8ob429v>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/N4b6ZpfA>
+        .\r\n<https://id.parliament.uk/N4b6ZpfA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/N4b6ZpfA>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/EPhidb9p>
+        .\r\n<https://id.parliament.uk/EPhidb9p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/EPhidb9p>
+        <https://id.parliament.uk/schema/personGivenName> \"David\" .\r\n<https://id.parliament.uk/EPhidb9p>
+        <https://id.parliament.uk/schema/personFamilyName> \"Lidington\" .\r\n<https://id.parliament.uk/EPhidb9p>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Mr David Lidington\"
+        .\r\n<https://id.parliament.uk/EPhidb9p> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/s7ncDtD4> .\r\n<https://id.parliament.uk/s7ncDtD4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/s7ncDtD4> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/EPhidb9p>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/q3jCOasA>
+        .\r\n<https://id.parliament.uk/q3jCOasA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/q3jCOasA>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/EPhidb9p> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/gaU9A1YC> .\r\n<https://id.parliament.uk/gaU9A1YC>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/gaU9A1YC> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/d3Sii84i>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/d3Sii84i> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberavon\" .\r\n<https://id.parliament.uk/d3Sii84i> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/d3Sii84i>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/0832U9Ac>
+        .\r\n<https://id.parliament.uk/0832U9Ac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/0832U9Ac>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/i0xWLO1y>
+        .\r\n<https://id.parliament.uk/i0xWLO1y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/i0xWLO1y>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/tVFC34am>
+        .\r\n<https://id.parliament.uk/tVFC34am> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/tVFC34am>
+        <https://id.parliament.uk/schema/personGivenName> \"Stephen\" .\r\n<https://id.parliament.uk/tVFC34am>
+        <https://id.parliament.uk/schema/personFamilyName> \"Kinnock\" .\r\n<https://id.parliament.uk/tVFC34am>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Stephen Kinnock\"
+        .\r\n<https://id.parliament.uk/tVFC34am> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/sDWiAobl> .\r\n<https://id.parliament.uk/sDWiAobl>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/sDWiAobl> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/LEYIBvV9>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Party>
+        .\r\n<https://id.parliament.uk/LEYIBvV9> <https://id.parliament.uk/schema/partyName>
+        \"Labour\" .\r\n<https://id.parliament.uk/tVFC34am> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/rVHPQSxy> .\r\n<https://id.parliament.uk/rVHPQSxy>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/rVHPQSxy> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/KGSsvFkr>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/KGSsvFkr> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashfield\" .\r\n<https://id.parliament.uk/KGSsvFkr> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/KGSsvFkr>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/SpIGDXkV>
+        .\r\n<https://id.parliament.uk/SpIGDXkV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/SpIGDXkV>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/rPgn18we>
+        .\r\n<https://id.parliament.uk/rPgn18we> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/rPgn18we>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/Ip7gs7Ev>
+        .\r\n<https://id.parliament.uk/Ip7gs7Ev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/Ip7gs7Ev>
+        <https://id.parliament.uk/schema/personGivenName> \"Gloria\" .\r\n<https://id.parliament.uk/Ip7gs7Ev>
+        <https://id.parliament.uk/schema/personFamilyName> \"De Piero\" .\r\n<https://id.parliament.uk/Ip7gs7Ev>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Gloria De Piero\"
+        .\r\n<https://id.parliament.uk/Ip7gs7Ev> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/5Ry34Nh3> .\r\n<https://id.parliament.uk/5Ry34Nh3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/5Ry34Nh3> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/Ip7gs7Ev>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/TA3LkQJm>
+        .\r\n<https://id.parliament.uk/TA3LkQJm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/TA3LkQJm>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/LEYIBvV9>
+        .\r\n<https://id.parliament.uk/Ip7gs7Ev> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/1UUr3vZC> .\r\n<https://id.parliament.uk/1UUr3vZC>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/1UUr3vZC> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/te1Goc4t>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/te1Goc4t> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashton-under-Lyne\" .\r\n<https://id.parliament.uk/te1Goc4t> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/te1Goc4t>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/36G1zRjX>
+        .\r\n<https://id.parliament.uk/36G1zRjX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/36G1zRjX>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/5zOnmaKp>
+        .\r\n<https://id.parliament.uk/5zOnmaKp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/5zOnmaKp>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/F0G8dCz1>
+        .\r\n<https://id.parliament.uk/F0G8dCz1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/F0G8dCz1>
+        <https://id.parliament.uk/schema/personGivenName> \"Angela\" .\r\n<https://id.parliament.uk/F0G8dCz1>
+        <https://id.parliament.uk/schema/personFamilyName> \"Rayner\" .\r\n<https://id.parliament.uk/F0G8dCz1>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Angela Rayner\" .\r\n<https://id.parliament.uk/F0G8dCz1>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/DXixXAgz>
+        .\r\n<https://id.parliament.uk/DXixXAgz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/DXixXAgz>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/LEYIBvV9>
+        .\r\n<https://id.parliament.uk/F0G8dCz1> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/J3kAR45t> .\r\n<https://id.parliament.uk/J3kAR45t>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/J3kAR45t> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/WoddrRDl>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/WoddrRDl> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen North\" .\r\n<https://id.parliament.uk/WoddrRDl> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/WoddrRDl>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/oX9sputX>
+        .\r\n<https://id.parliament.uk/oX9sputX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/oX9sputX>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/jYbQSp6u>
+        .\r\n<https://id.parliament.uk/jYbQSp6u> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/jYbQSp6u>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/G5Le0IsQ>
+        .\r\n<https://id.parliament.uk/G5Le0IsQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/G5Le0IsQ>
+        <https://id.parliament.uk/schema/personGivenName> \"Kirsty\" .\r\n<https://id.parliament.uk/G5Le0IsQ>
+        <https://id.parliament.uk/schema/personFamilyName> \"Blackman\" .\r\n<https://id.parliament.uk/G5Le0IsQ>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Kirsty Blackman\"
+        .\r\n<https://id.parliament.uk/G5Le0IsQ> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/ikRTOSoY> .\r\n<https://id.parliament.uk/ikRTOSoY>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/ikRTOSoY> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/wnvdA00Y> .\r\n<https://id.parliament.uk/wnvdA00Y>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Party>
+        .\r\n<https://id.parliament.uk/wnvdA00Y> <https://id.parliament.uk/schema/partyName>
+        \"Scottish National Party\" .\r\n<https://id.parliament.uk/G5Le0IsQ> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/vAFW5EeB> .\r\n<https://id.parliament.uk/vAFW5EeB>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/vAFW5EeB> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/wnvdA00Y> .\r\n<https://id.parliament.uk/qYhFwfjy>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/qYhFwfjy> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeenshire and Kincardineshire, Eastern\" .\r\n<https://id.parliament.uk/qYhFwfjy>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/qYhFwfjy> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/OfVgOQwB>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/OfVgOQwB> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Amber Valley\" .\r\n<https://id.parliament.uk/OfVgOQwB> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/OfVgOQwB>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NasKqHWo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/NasKqHWo>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Acton\" .\r\n<https://id.parliament.uk/NasKqHWo>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NasKqHWo> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/yGy2uH2n>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/yGy2uH2n> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Arundel and South Downs\" .\r\n<https://id.parliament.uk/yGy2uH2n> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/yGy2uH2n>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/LSPisu29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/LSPisu29>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Abingdon\" .\r\n<https://id.parliament.uk/LSPisu29>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/LSPisu29> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/c2tlSaBR>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/c2tlSaBR> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ayr\" .\r\n<https://id.parliament.uk/c2tlSaBR> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/c2tlSaBR>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ynaJJeSC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/ynaJJeSC>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Angus East\" .\r\n<https://id.parliament.uk/ynaJJeSC>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ynaJJeSC> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/HgAonGy4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/HgAonGy4> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashton-under-Lyne\" .\r\n<https://id.parliament.uk/HgAonGy4> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/HgAonGy4>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/QyJDfnb4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/QyJDfnb4>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldridge-Brownhills\"
+        .\r\n<https://id.parliament.uk/QyJDfnb4> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/QyJDfnb4>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NRiW2tZC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/NRiW2tZC>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberavon\" .\r\n<https://id.parliament.uk/NRiW2tZC>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NRiW2tZC> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/gqMjBafw>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/gqMjBafw> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Abingdon\" .\r\n<https://id.parliament.uk/gqMjBafw> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/gqMjBafw>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/0qeqr6qE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/0qeqr6qE>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Argyll and Bute\"
+        .\r\n<https://id.parliament.uk/0qeqr6qE> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/0qeqr6qE>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/plHiGz0i>
+        .\r\n<https://id.parliament.uk/plHiGz0i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/plHiGz0i>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/8pTJIG9S>
+        .\r\n<https://id.parliament.uk/8pTJIG9S> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/8pTJIG9S>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/nPHKL19U>
+        .\r\n<https://id.parliament.uk/nPHKL19U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/nPHKL19U>
+        <https://id.parliament.uk/schema/personGivenName> \"Brendan\" .\r\n<https://id.parliament.uk/nPHKL19U>
+        <https://id.parliament.uk/schema/personFamilyName> \"O'Hara\" .\r\n<https://id.parliament.uk/nPHKL19U>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Brendan O'Hara\" .\r\n<https://id.parliament.uk/nPHKL19U>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/03N1AYA0>
+        .\r\n<https://id.parliament.uk/03N1AYA0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/03N1AYA0>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/wnvdA00Y>
+        .\r\n<https://id.parliament.uk/nPHKL19U> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/p1VvqBgi> .\r\n<https://id.parliament.uk/p1VvqBgi>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/p1VvqBgi> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/wnvdA00Y> .\r\n<https://id.parliament.uk/k9D2cOuE>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/k9D2cOuE> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Arundel and South Downs\" .\r\n<https://id.parliament.uk/k9D2cOuE> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/k9D2cOuE>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/99JJ09IS>
+        .\r\n<https://id.parliament.uk/99JJ09IS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/99JJ09IS>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/dNmgUxQi>
+        .\r\n<https://id.parliament.uk/dNmgUxQi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/dNmgUxQi>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/QGFl4k1C>
+        .\r\n<https://id.parliament.uk/QGFl4k1C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/QGFl4k1C>
+        <https://id.parliament.uk/schema/personGivenName> \"Nick\" .\r\n<https://id.parliament.uk/QGFl4k1C>
+        <https://id.parliament.uk/schema/personFamilyName> \"Herbert\" .\r\n<https://id.parliament.uk/QGFl4k1C>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Nick Herbert\" .\r\n<https://id.parliament.uk/QGFl4k1C>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/DhfknQv8>
+        .\r\n<https://id.parliament.uk/DhfknQv8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/DhfknQv8>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/QGFl4k1C> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/bhdpDWWp> .\r\n<https://id.parliament.uk/bhdpDWWp>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/bhdpDWWp> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/QGFl4k1C>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/MnhKgOzd>
+        .\r\n<https://id.parliament.uk/MnhKgOzd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/MnhKgOzd>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/y3RWupMc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/y3RWupMc>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashfield\" .\r\n<https://id.parliament.uk/y3RWupMc>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/y3RWupMc> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/XtYXJZMR>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/XtYXJZMR> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aldershot\" .\r\n<https://id.parliament.uk/XtYXJZMR> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/XtYXJZMR>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/FHLB7Khz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/FHLB7Khz>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Armagh\" .\r\n<https://id.parliament.uk/FHLB7Khz>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/FHLB7Khz> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/gI5pG553>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/gI5pG553> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen South\" .\r\n<https://id.parliament.uk/gI5pG553> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/gI5pG553>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/YsQOcZBh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/YsQOcZBh>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberavon\" .\r\n<https://id.parliament.uk/YsQOcZBh>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/YsQOcZBh> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/EITVGlPm>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/EITVGlPm> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Altrincham and Sale West\" .\r\n<https://id.parliament.uk/EITVGlPm> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/EITVGlPm>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/6lRoRzUx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/6lRoRzUx>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashfield\" .\r\n<https://id.parliament.uk/6lRoRzUx>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/6lRoRzUx> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1955-05-26+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/NHdC2qRF>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/NHdC2qRF> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen South\" .\r\n<https://id.parliament.uk/NHdC2qRF> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/NHdC2qRF>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Gg6zFQlp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/Gg6zFQlp>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Altrincham and Sale\"
+        .\r\n<https://id.parliament.uk/Gg6zFQlp> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Gg6zFQlp>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/UXuOWHx3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/UXuOWHx3>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Altrincham and Sale\"
+        .\r\n<https://id.parliament.uk/UXuOWHx3> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/UXuOWHx3>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ap6bD4Bo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/ap6bD4Bo>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Accrington\" .\r\n<https://id.parliament.uk/ap6bD4Bo>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ap6bD4Bo> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/Zvhkdtfx>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/Zvhkdtfx> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeenshire and Kincardineshire, Central\" .\r\n<https://id.parliament.uk/Zvhkdtfx>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/Zvhkdtfx> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/mwRQ6Vcp>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/mwRQ6Vcp> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashton-under-Lyne\" .\r\n<https://id.parliament.uk/mwRQ6Vcp> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/mwRQ6Vcp>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ciM6Zdr7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/ciM6Zdr7>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ashford\" .\r\n<https://id.parliament.uk/ciM6Zdr7>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/ciM6Zdr7> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/3GNKO2Lt>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/3GNKO2Lt> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Anglesey\" .\r\n<https://id.parliament.uk/3GNKO2Lt> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/3GNKO2Lt>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/xmcb47zS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/xmcb47zS>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Airdrie and Shotts\"
+        .\r\n<https://id.parliament.uk/xmcb47zS> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/xmcb47zS>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/N1pINmLn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/N1pINmLn>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdeen South\"
+        .\r\n<https://id.parliament.uk/N1pINmLn> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/N1pINmLn>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/QUBJPQbZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/QUBJPQbZ>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldershot\" .\r\n<https://id.parliament.uk/QUBJPQbZ>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/QUBJPQbZ> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/v9wOC4xW>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/v9wOC4xW> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen North\" .\r\n<https://id.parliament.uk/v9wOC4xW> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/v9wOC4xW>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/8gcmvtPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/8gcmvtPL>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Arundel and Shoreham\"
+        .\r\n<https://id.parliament.uk/8gcmvtPL> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/8gcmvtPL>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/192l7h6I> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/192l7h6I>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberdeen South\"
+        .\r\n<https://id.parliament.uk/192l7h6I> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/192l7h6I>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/H8W2Tmfp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/H8W2Tmfp>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldershot\" .\r\n<https://id.parliament.uk/H8W2Tmfp>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/H8W2Tmfp> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/TNEc5vvb>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/TNEc5vvb> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Angus\" .\r\n<https://id.parliament.uk/TNEc5vvb> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"2005-05-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/TNEc5vvb>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/DVsQfAWS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/DVsQfAWS>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Alyn and Deeside\"
+        .\r\n<https://id.parliament.uk/DVsQfAWS> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/DVsQfAWS>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/BWeBoKXi>
+        .\r\n<https://id.parliament.uk/BWeBoKXi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/BWeBoKXi>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/wcYsJyjN>
+        .\r\n<https://id.parliament.uk/wcYsJyjN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/wcYsJyjN>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/7BBIRiIb>
+        .\r\n<https://id.parliament.uk/7BBIRiIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/7BBIRiIb>
+        <https://id.parliament.uk/schema/personGivenName> \"Mark\" .\r\n<https://id.parliament.uk/7BBIRiIb>
+        <https://id.parliament.uk/schema/personFamilyName> \"Tami\" .\r\n<https://id.parliament.uk/7BBIRiIb>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Mark Tami\" .\r\n<https://id.parliament.uk/7BBIRiIb>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/O65WQkwV>
+        .\r\n<https://id.parliament.uk/O65WQkwV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/O65WQkwV>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/LEYIBvV9>
+        .\r\n<https://id.parliament.uk/7BBIRiIb> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/tp6iAw85> .\r\n<https://id.parliament.uk/tp6iAw85>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/tp6iAw85> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/LEYIBvV9> .\r\n<https://id.parliament.uk/7BBIRiIb>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/lsWGHfA0>
+        .\r\n<https://id.parliament.uk/lsWGHfA0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/lsWGHfA0>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/LEYIBvV9>
+        .\r\n<https://id.parliament.uk/cJD9fH9c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/cJD9fH9c>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Airdrie and Shotts\"
+        .\r\n<https://id.parliament.uk/cJD9fH9c> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/cJD9fH9c>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/QI0e1ws7>
+        .\r\n<https://id.parliament.uk/QI0e1ws7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/QI0e1ws7>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/H3lGN9oq>
+        .\r\n<https://id.parliament.uk/H3lGN9oq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/H3lGN9oq>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/dr2j1QYt>
+        .\r\n<https://id.parliament.uk/dr2j1QYt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/dr2j1QYt>
+        <https://id.parliament.uk/schema/personGivenName> \"Neil\" .\r\n<https://id.parliament.uk/dr2j1QYt>
+        <https://id.parliament.uk/schema/personFamilyName> \"Gray\" .\r\n<https://id.parliament.uk/dr2j1QYt>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Neil Gray\" .\r\n<https://id.parliament.uk/dr2j1QYt>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/bMR0UoDO>
+        .\r\n<https://id.parliament.uk/bMR0UoDO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/bMR0UoDO>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/wnvdA00Y>
+        .\r\n<https://id.parliament.uk/dr2j1QYt> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/uamizJ6T> .\r\n<https://id.parliament.uk/uamizJ6T>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/uamizJ6T> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/wnvdA00Y> .\r\n<https://id.parliament.uk/7jxasIKG>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/7jxasIKG> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashfield\" .\r\n<https://id.parliament.uk/7jxasIKG> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/7jxasIKG>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/18K8OMAg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/18K8OMAg>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Argyll\" .\r\n<https://id.parliament.uk/18K8OMAg>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/18K8OMAg> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/oOEfu37t>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/oOEfu37t> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdare\" .\r\n<https://id.parliament.uk/oOEfu37t> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/oOEfu37t>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NCRvKVEu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/NCRvKVEu>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Accrington\" .\r\n<https://id.parliament.uk/NCRvKVEu>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/NCRvKVEu> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/lT9FZAos>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/lT9FZAos> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ayr\" .\r\n<https://id.parliament.uk/lT9FZAos> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1997-05-01+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/lT9FZAos>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/eJqqS5PB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/eJqqS5PB>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Altrincham and Sale
+        West\" .\r\n<https://id.parliament.uk/eJqqS5PB> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/eJqqS5PB>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/LtPeTfc4>
+        .\r\n<https://id.parliament.uk/LtPeTfc4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/LtPeTfc4>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/sgMqvQhZ>
+        .\r\n<https://id.parliament.uk/sgMqvQhZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/sgMqvQhZ>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/3WIz8UOT>
+        .\r\n<https://id.parliament.uk/3WIz8UOT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/3WIz8UOT>
+        <https://id.parliament.uk/schema/personGivenName> \"Graham\" .\r\n<https://id.parliament.uk/3WIz8UOT>
+        <https://id.parliament.uk/schema/personFamilyName> \"Brady\" .\r\n<https://id.parliament.uk/3WIz8UOT>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Sir Graham Brady\"
+        .\r\n<https://id.parliament.uk/3WIz8UOT> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/ytWUfZdb> .\r\n<https://id.parliament.uk/ytWUfZdb>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/ytWUfZdb> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/3WIz8UOT>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/kJX838Ce>
+        .\r\n<https://id.parliament.uk/kJX838Ce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/kJX838Ce>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/3WIz8UOT> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/hdfZf4CP> .\r\n<https://id.parliament.uk/hdfZf4CP>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/hdfZf4CP> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/VucrjD2L>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/VucrjD2L> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Arfon\" .\r\n<https://id.parliament.uk/VucrjD2L> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/VucrjD2L>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/uuowcSc0>
+        .\r\n<https://id.parliament.uk/uuowcSc0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/uuowcSc0>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/hJF4TNTL>
+        .\r\n<https://id.parliament.uk/hJF4TNTL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/hJF4TNTL>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/RG34NzEx>
+        .\r\n<https://id.parliament.uk/RG34NzEx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/RG34NzEx>
+        <https://id.parliament.uk/schema/personGivenName> \"Hywel\" .\r\n<https://id.parliament.uk/RG34NzEx>
+        <https://id.parliament.uk/schema/personFamilyName> \"Williams\" .\r\n<https://id.parliament.uk/RG34NzEx>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Hywel Williams\" .\r\n<https://id.parliament.uk/RG34NzEx>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/VP2Fbpm2>
+        .\r\n<https://id.parliament.uk/VP2Fbpm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/VP2Fbpm2>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/CrVChKOx>
+        .\r\n<https://id.parliament.uk/CrVChKOx> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Party> .\r\n<https://id.parliament.uk/CrVChKOx>
+        <https://id.parliament.uk/schema/partyName> \"Plaid Cymru\" .\r\n<https://id.parliament.uk/RG34NzEx>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/AvsCsG3z>
+        .\r\n<https://id.parliament.uk/AvsCsG3z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/AvsCsG3z>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/CrVChKOx>
+        .\r\n<https://id.parliament.uk/RG34NzEx> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/FCG5s9tc> .\r\n<https://id.parliament.uk/FCG5s9tc>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/FCG5s9tc> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/CrVChKOx> .\r\n<https://id.parliament.uk/l2UTuNXI>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/l2UTuNXI> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ayr\" .\r\n<https://id.parliament.uk/l2UTuNXI> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/l2UTuNXI>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/fVDE5uCb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/fVDE5uCb>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aldershot\" .\r\n<https://id.parliament.uk/fVDE5uCb>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/fVDE5uCb> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/XZ3TYNn3>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/XZ3TYNn3> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Argyll\" .\r\n<https://id.parliament.uk/XZ3TYNn3> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1983-06-09+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/XZ3TYNn3>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/mToOOteZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/mToOOteZ>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Abingdon\" .\r\n<https://id.parliament.uk/mToOOteZ>
+        <https://id.parliament.uk/schema/constituencyGroupEndDate> \"1974-02-28+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/mToOOteZ> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/0C6wboU4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/0C6wboU4> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Antrim\" .\r\n<https://id.parliament.uk/0C6wboU4> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/0C6wboU4>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/gm4iTTNN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/gm4iTTNN>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ayr District of
+        Burghs\" .\r\n<https://id.parliament.uk/gm4iTTNN> <https://id.parliament.uk/schema/constituencyGroupEndDate>
+        \"1950-02-23+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/gm4iTTNN>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"1918-12-14+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/tKYqQfWp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/tKYqQfWp>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Aberconwy\" .\r\n<https://id.parliament.uk/tKYqQfWp>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/tKYqQfWp> <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat>
+        <https://id.parliament.uk/BVIdOdjF> .\r\n<https://id.parliament.uk/BVIdOdjF>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/HouseSeat>
+        .\r\n<https://id.parliament.uk/BVIdOdjF> <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency>
+        <https://id.parliament.uk/RClBCLVd> .\r\n<https://id.parliament.uk/RClBCLVd>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/SeatIncumbency>
+        .\r\n<https://id.parliament.uk/RClBCLVd> <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember>
+        <https://id.parliament.uk/lkfzGvnx> .\r\n<https://id.parliament.uk/lkfzGvnx>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Person>
+        .\r\n<https://id.parliament.uk/lkfzGvnx> <https://id.parliament.uk/schema/personGivenName>
+        \"Guto\" .\r\n<https://id.parliament.uk/lkfzGvnx> <https://id.parliament.uk/schema/personFamilyName>
+        \"Bebb\" .\r\n<https://id.parliament.uk/lkfzGvnx> <http://example.com/F31CBD81AD8343898B49DC65743F0BDF>
+        \"Guto Bebb\" .\r\n<https://id.parliament.uk/lkfzGvnx> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/RvL9qb06> .\r\n<https://id.parliament.uk/RvL9qb06>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/RvL9qb06> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/lkfzGvnx>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/13bwKgFf>
+        .\r\n<https://id.parliament.uk/13bwKgFf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/13bwKgFf>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/lkfzGvnx> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/Gw4eHKqT> .\r\n<https://id.parliament.uk/Gw4eHKqT>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/Gw4eHKqT> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/DHhlm3lU>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/DHhlm3lU> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aldridge-Brownhills\" .\r\n<https://id.parliament.uk/DHhlm3lU> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/DHhlm3lU>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/fm4eq5xJ>
+        .\r\n<https://id.parliament.uk/fm4eq5xJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/fm4eq5xJ>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/PzVZwLaA>
+        .\r\n<https://id.parliament.uk/PzVZwLaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/PzVZwLaA>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/j6Lei0y7>
+        .\r\n<https://id.parliament.uk/j6Lei0y7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/j6Lei0y7>
+        <https://id.parliament.uk/schema/personGivenName> \"Wendy\" .\r\n<https://id.parliament.uk/j6Lei0y7>
+        <https://id.parliament.uk/schema/personFamilyName> \"Morton\" .\r\n<https://id.parliament.uk/j6Lei0y7>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Wendy Morton\" .\r\n<https://id.parliament.uk/j6Lei0y7>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/0qKOfAXd>
+        .\r\n<https://id.parliament.uk/0qKOfAXd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/0qKOfAXd>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/j6Lei0y7> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/MyTqMsel> .\r\n<https://id.parliament.uk/MyTqMsel>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/MyTqMsel> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/KQINZQsu>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/KQINZQsu> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Aberdeen South\" .\r\n<https://id.parliament.uk/KQINZQsu> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/KQINZQsu>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/f8gQQuqg>
+        .\r\n<https://id.parliament.uk/f8gQQuqg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/f8gQQuqg>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/KGgbu4QI>
+        .\r\n<https://id.parliament.uk/KGgbu4QI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/KGgbu4QI>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/UA6am12j>
+        .\r\n<https://id.parliament.uk/UA6am12j> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/UA6am12j>
+        <https://id.parliament.uk/schema/personGivenName> \"Ross\" .\r\n<https://id.parliament.uk/UA6am12j>
+        <https://id.parliament.uk/schema/personFamilyName> \"Thomson\" .\r\n<https://id.parliament.uk/UA6am12j>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Ross Thomson\" .\r\n<https://id.parliament.uk/UA6am12j>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/ANGBh6rC>
+        .\r\n<https://id.parliament.uk/ANGBh6rC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/ANGBh6rC>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/aAAyssl2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/aAAyssl2>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Angus\" .\r\n<https://id.parliament.uk/aAAyssl2>
+        <https://id.parliament.uk/schema/constituencyGroupStartDate> \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date>
+        .\r\n<https://id.parliament.uk/aAAyssl2> <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat>
+        <https://id.parliament.uk/h7VK7rN4> .\r\n<https://id.parliament.uk/h7VK7rN4>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/HouseSeat>
+        .\r\n<https://id.parliament.uk/h7VK7rN4> <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency>
+        <https://id.parliament.uk/H85onjbF> .\r\n<https://id.parliament.uk/H85onjbF>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/SeatIncumbency>
+        .\r\n<https://id.parliament.uk/H85onjbF> <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember>
+        <https://id.parliament.uk/mveoY91P> .\r\n<https://id.parliament.uk/mveoY91P>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Person>
+        .\r\n<https://id.parliament.uk/mveoY91P> <https://id.parliament.uk/schema/personGivenName>
+        \"Kirstene\" .\r\n<https://id.parliament.uk/mveoY91P> <https://id.parliament.uk/schema/personFamilyName>
+        \"Hair\" .\r\n<https://id.parliament.uk/mveoY91P> <http://example.com/F31CBD81AD8343898B49DC65743F0BDF>
+        \"Kirstene Hair\" .\r\n<https://id.parliament.uk/mveoY91P> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/52cQSE7X> .\r\n<https://id.parliament.uk/52cQSE7X>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/52cQSE7X> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/AwgIDoDp>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ConstituencyGroup>
+        .\r\n<https://id.parliament.uk/AwgIDoDp> <https://id.parliament.uk/schema/constituencyGroupName>
+        \"Ashford\" .\r\n<https://id.parliament.uk/AwgIDoDp> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2010-05-06+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/AwgIDoDp>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/c9DeNmCi>
+        .\r\n<https://id.parliament.uk/c9DeNmCi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/c9DeNmCi>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/8GQEa1Ov>
+        .\r\n<https://id.parliament.uk/8GQEa1Ov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/8GQEa1Ov>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/72qlmbBV>
+        .\r\n<https://id.parliament.uk/72qlmbBV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/72qlmbBV>
+        <https://id.parliament.uk/schema/personGivenName> \"Damian\" .\r\n<https://id.parliament.uk/72qlmbBV>
+        <https://id.parliament.uk/schema/personFamilyName> \"Green\" .\r\n<https://id.parliament.uk/72qlmbBV>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Damian Green\" .\r\n<https://id.parliament.uk/72qlmbBV>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/KSFmkXc6>
+        .\r\n<https://id.parliament.uk/KSFmkXc6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/KSFmkXc6>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/72qlmbBV> <https://id.parliament.uk/schema/partyMemberHasPartyMembership>
+        <https://id.parliament.uk/2JtVX63B> .\r\n<https://id.parliament.uk/2JtVX63B>
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/PartyMembership>
+        .\r\n<https://id.parliament.uk/2JtVX63B> <https://id.parliament.uk/schema/partyMembershipHasParty>
+        <https://id.parliament.uk/DIifZMjq> .\r\n<https://id.parliament.uk/72qlmbBV>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/TjfJty6F>
+        .\r\n<https://id.parliament.uk/TjfJty6F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/TjfJty6F>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n<https://id.parliament.uk/4GRvudr2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/ConstituencyGroup> .\r\n<https://id.parliament.uk/4GRvudr2>
+        <https://id.parliament.uk/schema/constituencyGroupName> \"Ayr, Carrick and
+        Cumnock\" .\r\n<https://id.parliament.uk/4GRvudr2> <https://id.parliament.uk/schema/constituencyGroupStartDate>
+        \"2005-04-05+00:00\"^^<http://www.w3.org/2001/XMLSchema#date> .\r\n<https://id.parliament.uk/4GRvudr2>
+        <https://id.parliament.uk/schema/constituencyGroupHasHouseSeat> <https://id.parliament.uk/4HOx3kjm>
+        .\r\n<https://id.parliament.uk/4HOx3kjm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/HouseSeat> .\r\n<https://id.parliament.uk/4HOx3kjm>
+        <https://id.parliament.uk/schema/houseSeatHasSeatIncumbency> <https://id.parliament.uk/GjBVJBcG>
+        .\r\n<https://id.parliament.uk/GjBVJBcG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/SeatIncumbency> .\r\n<https://id.parliament.uk/GjBVJBcG>
+        <https://id.parliament.uk/schema/parliamentaryIncumbencyHasMember> <https://id.parliament.uk/wEB5TXBq>
+        .\r\n<https://id.parliament.uk/wEB5TXBq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/Person> .\r\n<https://id.parliament.uk/wEB5TXBq>
+        <https://id.parliament.uk/schema/personGivenName> \"William\" .\r\n<https://id.parliament.uk/wEB5TXBq>
+        <https://id.parliament.uk/schema/personFamilyName> \"Grant\" .\r\n<https://id.parliament.uk/wEB5TXBq>
+        <http://example.com/F31CBD81AD8343898B49DC65743F0BDF> \"Bill Grant\" .\r\n<https://id.parliament.uk/wEB5TXBq>
+        <https://id.parliament.uk/schema/partyMemberHasPartyMembership> <https://id.parliament.uk/HlCSCKsG>
+        .\r\n<https://id.parliament.uk/HlCSCKsG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://id.parliament.uk/schema/PartyMembership> .\r\n<https://id.parliament.uk/HlCSCKsG>
+        <https://id.parliament.uk/schema/partyMembershipHasParty> <https://id.parliament.uk/DIifZMjq>
+        .\r\n_:node19950813 <https://id.parliament.uk/schema/value> \"B\" .\r\n_:node19950814
+        <https://id.parliament.uk/schema/value> \"A\" .\r\n_:node19950815 <https://id.parliament.uk/schema/value>
+        \"C\" .\r\n_:node19950816 <https://id.parliament.uk/schema/value> \"D\" .\r\n_:node19950817
+        <https://id.parliament.uk/schema/value> \"E\" .\r\n_:node19950818 <https://id.parliament.uk/schema/value>
+        \"F\" .\r\n_:node19950819 <https://id.parliament.uk/schema/value> \"G\" .\r\n_:node19950820
+        <https://id.parliament.uk/schema/value> \"H\" .\r\n_:node19950821 <https://id.parliament.uk/schema/value>
+        \"L\" .\r\n_:node19950822 <https://id.parliament.uk/schema/value> \"J\" .\r\n_:node19950823
+        <https://id.parliament.uk/schema/value> \"I\" .\r\n_:node19950824 <https://id.parliament.uk/schema/value>
+        \"K\" .\r\n_:node19950825 <https://id.parliament.uk/schema/value> \"M\" .\r\n_:node19950826
+        <https://id.parliament.uk/schema/value> \"N\" .\r\n_:node19950827 <https://id.parliament.uk/schema/value>
+        \"O\" .\r\n_:node19950828 <https://id.parliament.uk/schema/value> \"P\" .\r\n_:node19950829
+        <https://id.parliament.uk/schema/value> \"R\" .\r\n_:node19950830 <https://id.parliament.uk/schema/value>
+        \"S\" .\r\n_:node19950831 <https://id.parliament.uk/schema/value> \"T\" .\r\n_:node19950832
+        <https://id.parliament.uk/schema/value> \"U\" .\r\n_:node19950833 <https://id.parliament.uk/schema/value>
+        \"W\" .\r\n_:node19950834 <https://id.parliament.uk/schema/value> \"V\" .\r\n_:node19950835
+        <https://id.parliament.uk/schema/value> \"Y\" .\r\n_:node19950836 <https://id.parliament.uk/schema/value>
+        \"Q\" .\r\n"
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 16:16:28 GMT
+recorded_with: VCR 4.0.0
