@@ -1,9 +1,5 @@
 module PageSerializer
   class BasePageSerializer < BaseSerializer
-    def initialize(person)
-      @person = person
-    end
-
     def to_h
       {
           layout: { template: 'layout' },
