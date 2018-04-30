@@ -67,6 +67,18 @@ class ConstituenciesController < ApplicationController
     end
   end
 
+  def index
+    @constituencies, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'ConstituencyGroup', ::Grom::Node::BLANK)
+    @constituencies = @constituencies.select { |constituency| constituency.current? }.sort_by { |constituency| constituency.name }
+
+    render_page(PageSerializer::ListPageSerializer.new(
+        @constituencies,
+        ComponentSerializer::ConstituencyComponentSerializer,
+        'constituencies',
+        @letters
+    ))
+  end
+
   def letters
     @constituencies, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'ConstituencyGroup', ::Grom::Node::BLANK)
     @constituencies = @constituencies.select { |constituency| constituency.current? }.sort_by { |constituency| constituency.name }
