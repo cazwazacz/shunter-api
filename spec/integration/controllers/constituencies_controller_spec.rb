@@ -23,6 +23,17 @@ RSpec.describe ConstituenciesController, vcr: true do
     end
   end
 
+  describe 'GET index' do
+    context 'for all constituencies' do
+      it 'renders expected JSON output' do
+        get '/constituencies'
+        expected_json = get_fixture('constituencies_controller/index/index.json')
+
+        expect(response.body).to eq(expected_json)
+      end
+    end
+  end
+
   describe 'GET letters' do
     context 'for constituencies beginning with A' do
       it 'renders expected JSON output' do
