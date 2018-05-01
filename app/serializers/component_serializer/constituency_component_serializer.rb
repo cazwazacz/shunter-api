@@ -29,6 +29,7 @@ module ComponentSerializer
     def former_constituency_hash
       {
           'constituency_name': former_constituency_name,
+          'graph_id': "#{@constituency.graph_id}",
           'subtitle': 'Former constituency'
       }
     end
