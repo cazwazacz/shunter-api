@@ -26,8 +26,8 @@ RSpec.describe ConstituenciesController, vcr: true do
   describe 'GET letters' do
     context 'for constituencies beginning with A' do
       it 'renders expected JSON output' do
-        get '/constituencies/a-z/a'
-        expected_json = get_fixture('constituencies_controller/letters/a.json')
+        get '/constituencies/a-z/y'
+        expected_json = get_fixture('constituencies_controller/letters/y.json')
 
         expect(response.body).to eq(expected_json)
       end
