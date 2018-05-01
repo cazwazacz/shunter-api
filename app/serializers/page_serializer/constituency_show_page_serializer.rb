@@ -18,8 +18,8 @@ module PageSerializer
 
       c << ComponentSerializer::ConstituencyHeadingComponentSerializer.new(@constituency).to_h
       c << ComponentSerializer::ConstituencySubheadingComponentSerializer.new(@constituency).to_h
-      c << ComponentSerializer::MapComponentSerializer.new(@json_location).to_h
-      c << people_array
+      c << ComponentSerializer::MapComponentSerializer.new(@json_location).to_h if @constituency.current?
+      c << people_array if @constituency.current?
       c << ComponentSerializer::FormerSeatIncumbenciesComponentSerializer.new(@seat_incumbencies).to_h
 
       c

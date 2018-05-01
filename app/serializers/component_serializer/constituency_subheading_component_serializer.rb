@@ -11,7 +11,14 @@ module ComponentSerializer
     end
 
     def data
-      "#{region}"
+      {
+          current: @constituency.current?,
+          subheading: subheading
+      }
+    end
+
+    def subheading
+      @constituency.current? ? "#{region}" : "Constituency from #{@constituency.date_range}"
     end
 
     def region
