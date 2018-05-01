@@ -69,7 +69,7 @@ class ConstituenciesController < ApplicationController
 
   def index
     @constituencies, @letters = Parliament::Utils::Helpers::FilterHelper.filter_sort(@request, :sort_name, 'ConstituencyGroup', ::Grom::Node::BLANK)
-    @constituencies = @constituencies.select { |constituency| constituency.current? }.sort_by { |constituency| constituency.name }
+    @constituencies = @constituencies.sort { |a, b| [a.name, b.start_date] <=> [b.name, a.start_date] }
 
     render_page(PageSerializer::ListPageSerializer.new(
         @constituencies,
